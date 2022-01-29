@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap&family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-claret: #b60000;
+    --color-gray-text: #757575;
+    --color-dark-gray: #3a3a3a;
+    --roboto: 'Roboto Condensed', sans-serif;
+    --rubik: 'Rubik', sans-serif;
+    --kaushan: 'Kaushan Script', cursive;
+}
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 85px;
+    width: 100%;
+    background-color: #ff0000;
+    box-shadow: 0 2px 10px black;
+    user-select: none;
+    transition: .2s linear;
+}
+
+#logo {
+    flex-basis: 52%;
+    font-family: var(--kaushan);
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#logo span {
+    display: block;
+    position: absolute;
+}
+
+#logo-top {
+    left: 150px;
+    font-size: 44px;
+}
+
+#logo-bottom {
+    left: 105px;
+    top: 52px;
+    font-size: 17px;
+}
+
+#logo span i {
+    font-size: 32px;
+    color: white;
+    padding: 2px;
+    transform: rotate(35deg) translate(0, -3px);
+}
+
+nav {
+    flex-basis: 48%;
+}
+
+nav ul {
+    height: 85px;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 100%;
+    line-height: 85px;
+    padding-left: 25px;
+}
+
+nav ul li a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(238, 238, 238);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.5px;
+}
+
+nav ul li a i {
+    font-size: 23px;
+    padding: 5px;
+}
+
+#contact {
+    position: fixed;
+    top: 110px;
+    right: 20px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-sizing: content-box;
+    box-shadow: 0 2px 5px rgb(221, 221, 221);
+    background-color: var(--color-claret);
+    text-align: center;
+    transition: .2s linear;
+}
+
+#contact:hover {
+    background-color: black;
+    box-shadow: 0 2px 5px black;
+}
+
+#contact i {
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/header2.jpg');
+    background-position: 95% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 35px rgb(110, 110, 110);
+}
+
+header button {
+    position: absolute;
+    bottom: 47%;
+    left: 100%;
+    z-index: 2;
+    width: 450px;
+    height: 100px;
+    background-color: #ff0000;
+    border: 3px solid white;
+    box-shadow: 5px 5px 200px 5px rgba(199, 199, 199, 0.7);
+    color: white;
+    font-style: italic;
+    font-family: var(--kaushan);
+    font-size: 40px;
+    transition: .2s linear;
+    animation: header-button-move .2s .2s linear both, header-button-shake 10s 2s cubic-bezier(.36, .07, .19, .97) both infinite;
+
+}
+
+@keyframes header-button-move {
+    100% {
+        left: 59%;
+    }
+}
+
+@keyframes header-button-shake {
+    1%,
+    9% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    2%,
+    8% {
+      transform: translate3d(2px, 0, 0);
+    }
+    3%,
+    5%,
+    7% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    4%,
+    6% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+header button:hover {
+    background-color: black;
+    box-shadow: 5px 5px 200px 5px rgba(128, 128, 128, 0.5);
+}
+
+header button i {
+    padding-left: 17px;
+    transform: rotate(35deg);
+}
+
+header p {
+    position: absolute;
+    bottom: 18%;
+    left: 65.5%;
+    z-index: 2;
+    width: 250px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 30px white;
+    opacity: 0;
+    animation: header-paragraph-opacity .2s .5s linear both;
+}
+
+@keyframes header-paragraph-opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    margin: 15vh auto 10vh auto;
+}
+
+.course {
+    position: relative;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-shadow: 0 2px 12px gray;
+    transition: .5s linear;
+}
+
+.course:nth-of-type(even) {
+    left: 100%;
+}
+
+.animation-on-scroll {
+    left: 0;
+}
+
+.course:nth-of-type(even).animation-on-scroll {
+    left: 0;
+}
+
+.course:nth-of-type(even) .course-image {
+    order: 1;
+}
+
+.course-image {
+    flex-basis: 50%;
+    height: 450px;
+    order: auto;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.course-description {
+    flex-basis: 50%;
+    height: 450px;
+}
+
+.course-description h2 {
+    font-family: var(--roboto);
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 55px 0 20px 0;
+    color: var(--color-gray-text);
+}
+
+.line {
+    width: 200px;
+    border-top: 8px dashed var(--color-claret);
+    margin: 0 auto;
+}
+
+.course-description #description {
+    font-family: var(--roboto);
+    font-size: 18px;
+    width: 400px;
+    margin: 50px auto;
+    text-align: justify;
+    color: var(--color-gray-text);
+}
+
+.course-description .info {
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.course-description .info i {
+    font-size: 33px;
+    color: var(--color-claret);
+}
+
+.course-description .info span {
+    display: block;
+    margin: 10px;
+    font-family: var(--roboto);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.course-description .info button {
+    margin: 5px auto;
+    font-family: var(--roboto);
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: var(--color-claret);
+    color: white;
+    border: none;
+    transition: .2s;
+}
+
+.course-description .info button:hover {
+    background-color: black;
+    letter-spacing: 0.3px;
+    border-radius: 5px;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#about-me .my-name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, 0);
+    font-family: var(--kaushan);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.more-about-me {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 900px;
+    height: 400px;
+    font-size: 18px;
+}
+
+.more-about-me p:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+    font-family: var(--rubik);
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 25px;
+    left: 450px;
+    height: 275px;
+    border-right: 3px dashed black;
+}
+
+.more-about-me p:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+    font-family: var(--rubik);
+}
+
+.more-about-me button {
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    font-family: var(--roboto);
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    transition: .2s linear;
+}
+
+.more-about-me button:hover {
+    background-color: red;
+    letter-spacing: 1.15px;
+    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.671);
+    text-shadow: 1px 1px 5px white;
+}
+
+#about-me img {
+    position: absolute;
+    bottom: -550px;
+    right: -250px;
+    transform: rotate(-20deg);
+    width: 390px;
+    height: 619px;
+    transition: .3s linear;
+}
+
+@keyframes img-chudowicz-move {
+    100% {
+    bottom: 40px;
+    right: -75px;
+    transform: rotate(-20deg);
+    }
+}
+
+
+#about-me .recipes-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    font-family: var(--rubik);
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+#recipes {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; 
+    width: 1400px;
+    margin: 10vh auto;
+}
+
+.recipe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 440px;
+    background-color: white;
+    box-shadow: -2px -2px 10px gray;
+    margin: 5px;
+}
+
+.recipe img {
+    position: absolute;
+    top: calc( ((340px*5) /100) /2);
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 95%;
+    height: 50%;
+}
+
+.recipe h2 {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--rubik);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-dark-gray);
+}
+
+section.details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    width: 300px;
+    height: 60px;
+    transform: translate(-50%, 0);
+}
+
+div.details {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    font-size: 14px;
+    font-family: var(--roboto);
+    color: var(--color-dark-gray);
+}
+
+.details span {
+    display: block;
+    font-size: 12px;
+}
+
+.details div {
+    flex-basis: 100px;
+    text-align: center;
+}
+
+.time {
+    flex-basis: 100px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.recipe-desc {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 300px;
+    font-family: var(--roboto);
+    font-size: 14px;
+}
+
+.recipe-desc p {
+    text-align: justify;
+}
+
+.recipe button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-family: var(--roboto);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    background-color: white;
+    border: 2px solid var(--color-dark-gray);
+    color: var(--color-dark-gray);
+    transition: .2s linear;
+}
+
+.recipe button:hover {
+    background-color: var(--color-dark-gray);
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 85px;
+    font-family: var(--roboto);
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 85px;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+}
