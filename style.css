@@ -41,27 +41,30 @@ html {
 
 .menu-burger {
     position: absolute;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
     text-align: center;
-    width: 17vw;
-    height: 17vw;
+    width: clamp(55px, 16vw, 60px);
+    height: clamp(55px, 16vw, 60px);
     background-color: red;
-    border: 3px solid white;
+    outline: 3.5px solid white;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgb(61, 61, 61);
+    box-shadow: 0 2px 10px 2px rgb(0, 0, 0);
 }
 
 .menu-burger i {
-    font-size: 8.5vw;
+    font-size: clamp(27.5px, 8vw, 30px);
     color: white;
-    line-height: 17vw;
+    /* line-height: clamp(55px, 16vw, 60px); */
     text-shadow: 0 0 3px black;
+    transform: translate(0, 55%);
 }
 
 #logo {
-    display: none;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -102,9 +105,6 @@ nav {
 }
 
 header {
-    width: 100%;
-    margin-top: 150px;
-    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +112,9 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 2px 15px rgb(110, 110, 110);
+    width: 100%;
+    margin-top: 150px;
+    height: calc(100vh - 150px);
 }
 
 .welcome {
@@ -142,9 +145,8 @@ header {
 
 .welcome p {
     width: 70%;
-    margin-top: 30px;
     font-size: clamp(15px, 9vw, 45px);
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 5px black;
     margin: 20px auto;
     font-family: 'Rubik', sans-serif;
     font-style: italic;
@@ -160,9 +162,6 @@ header {
 /* COURSES */
 
 #courses {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     width: 95%;
     margin: 5vh auto;
 }
@@ -193,9 +192,9 @@ header {
 .course-description h2 {
     display: block;
     width: 95%;
-    margin: 0 auto;
-    padding: 30px 0 0 0;
-    font-size: clamp(20px, 6vw, 6vw);
+    margin: 30px auto 0 auto;
+    /* padding: 30px 0 0 0; */
+    font-size: clamp(20px, 6vw, 25px);
     font-weight: bold;
     letter-spacing: 1px;
     font-family: var(--roboto);
@@ -213,7 +212,7 @@ header {
 .course-description .description-p {
     width: 90%;
     margin: 20px auto 0 auto;
-    font-size: clamp(17px, 5vw, 5vw);
+    font-size: clamp(16px, 5vw, 18px);
     letter-spacing: 1px;
     font-family: var(--roboto);
     text-align: justify;
@@ -256,17 +255,21 @@ header {
 /* ABOUT ME */
 
 #about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
 }
 
 #about-me .my-name {
-    font-size: 9vw;
+    font-size: clamp(20px, 9vw, 30px);
     font-weight: bold;
     font-family: var(--kaushan);
     text-transform: uppercase;
     text-align: center;
-    margin: 50px 0 15px 0;
+    margin: 25px 0 15px 0;
 }
 
 .more-about-me {
@@ -284,18 +287,19 @@ header {
     letter-spacing: 1px;
     box-shadow: 0 0 5px 10px black;
     text-shadow: 0 0 2px white;
-    font-size: clamp(20px, 6vw, 6vw);
+    font-size: clamp(20px, 6vw, 22px);
     font-family: var(--roboto);
     text-transform: uppercase;
     border: none;
 }
 
 #about-me img {
-    width: 100%;
-    height: auto;    }
+    width: 80%;
+    height: auto;    
+}
 
 .more-about-me p {
-    font-size: clamp(17px, 5vw, 20px);
+    font-size: clamp(16px, 5vw, 18px);
     font-family: var(--rubik);
     margin: 15px 0;
     text-align: justify;
@@ -307,7 +311,7 @@ header {
     width: 100%;
     background-color: black;
     font-family: var(--rubik);
-    font-size: clamp(25px, 6.5vw, 28px);
+    font-size: clamp(22px, 6vw, 25px);
     text-transform: uppercase;
     text-align: center;
     padding: 20px 0;
@@ -351,7 +355,7 @@ div.title {
 .recipe h2 {
     display: block;
     width: 90%;
-    font-size: clamp(20px, 6vw, 6vw);
+    font-size: clamp(20px, 6vw, 25px);
     font-family: var(--rubik);
     text-transform: uppercase;
     text-align: center;
@@ -392,7 +396,7 @@ div.details {
 .recipe-desc {
     width: 90%;
     font-family: var(--roboto);
-    font-size: clamp(17px, 4.5vw, 20px);
+    font-size: clamp(16px, 4.5vw, 18px);
     margin: 25px 0;
 }
 
@@ -401,7 +405,7 @@ div.details {
 }
 
 .recipe button {
-    font-size: clamp(17px, 5vw, 20px);
+    font-size: clamp(16px, 5vw, 18px);
     font-family: var(--roboto);
     font-weight: bold;
     text-transform: uppercase;
@@ -425,4 +429,240 @@ footer {
     letter-spacing: 1px;
     background-color: black;
     color: white;
+}
+
+@media (max-height: 426px) and (orientation: landscape) {
+    
+    /* NAVBAR & BURGER-MENU */
+    
+    #navbar {
+        height: 90px;
+    }
+
+    .burger-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-self: center;
+        order: 1;
+    }
+
+    .menu-burger {
+        position: static;
+        transform: translate(0, 0);
+        width: clamp(40px, 7vw, 45px);
+        height: clamp(40px, 7vw, 45px);
+        box-shadow: 0 0 15px 2px white;
+        margin: 0 auto;
+    }
+
+    .menu-burger i {
+        font-size: clamp(20px, 3.5vw, 22.5px);
+        text-shadow: 0 0 2px white;
+    }
+
+    #logo {
+        flex-grow: 4;
+    }
+
+    #logo span {
+        width: 60%;
+        margin: 0 0;
+    }
+
+    .logo-top {
+        font-size: clamp(30px, 5.5vw, 40px);
+    }
+
+    .logo-bottom {
+        font-size: 2vw;
+    }
+
+    #logo span i {
+        font-size: clamp(21.5px, 3.2vw, 23px);
+    }
+
+    /* HEADER */
+
+    header {
+        background-image: url('img/header-mobile-landscape.jpg');
+        margin-top: 90px;
+        height: calc(100vh - 90px);
+    }
+
+    .welcome {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .welcome button {
+        /* width: 80%; */
+        font-size: 5.5vw;
+        min-height: 0;
+    }
+
+    .welcome p {
+        font-size: clamp(21px, 4vw, 25px);
+        width: 100%;
+    }
+
+    /* COURSES */
+
+    .course {
+        flex-direction: row;
+        height: auto;
+        margin: 3vh 0;
+        outline: 1px solid rgb(170, 170, 170);
+    }
+
+    .course-image {
+        width: 50%;
+        height: auto;
+        box-shadow: 0 0 0;
+
+    }
+
+    .course-description {
+        position: relative;
+        width: 50%;
+        box-shadow: 0 0 0;
+    }
+
+    .course:nth-of-type(even) .course-image {
+        order: 1;
+    }
+
+    .course-description h2 {
+        margin: 20px auto 0 auto;
+        font-size: clamp(15px, 4vw, 20px);
+    }
+
+    .line {
+        display: none;
+    }
+
+    .course-description .description-p {
+        width: 80%;
+        margin: 5% auto 0 auto;
+        font-size: clamp(14px, 2.3vw, 18px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3; 
+        -webkit-box-orient: vertical;
+    }
+
+    .course-description .info {
+        position: absolute;
+        bottom: 3%;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .course-description .info i {
+        display: none;
+        font-size: clamp(25px, 7vw, 29px);
+    }
+
+    .course-description .info span {
+        font-size: clamp(9px, 2vw, 14px);
+        margin: 5px;
+    }
+
+    .course-description .info button {
+        font-size: 3vw;
+    }
+
+    /* ABOUT ME */
+
+    #about-me {
+        position: relative;
+        overflow: visible;
+    }
+
+    .more-about-me button {
+        margin: 15% 0 15% 0;
+    }
+
+    #about-me img {
+        position: absolute;
+        bottom: -5%;
+        right: -10%;
+        width: 42%;
+        transform:rotate(-35deg);
+        z-index: -1;
+    }
+
+    .more-about-me p {
+        z-index: 1;
+    }
+
+    /* RECIPES */
+
+    #recipes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .recipe {
+        width: 45%;
+        justify-content: space-between;
+        margin: 1.5%;
+    }
+
+    .recipe img {
+        height: 65%;
+    }
+
+    div.title {
+        /* width: 100%; */
+    }
+
+    .recipe h2 {
+        text-align: left;
+        font-size: clamp(12px, 2.5vw, 18px);
+        margin: 2% 0;
+        padding-left: 5%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* number of lines to show */
+        line-clamp: 1; 
+        -webkit-box-orient: vertical;
+    }
+
+    section.details {
+        /* display: none; */
+        width: 60%;
+        margin: 2.5% 5%;
+    }
+
+    div.details {
+        font-size: 1.3vw;
+    }
+
+    .details span {
+        font-size: 1.8vw;
+    }
+
+    .time {
+        font-size: 1.5vw;
+    }
+
+    .recipe-desc {
+        display: none;
+        margin: 10px 0 20px 0;
+    }
+
+    .recipe button {
+        padding: 0;
+        /* font-size: 80%; */
+        font-size: clamp(12px, 2.15vw, 18px);
+        margin-right: 7%;
+        letter-spacing: .5px;
+        border: none;
+    }
 }

@@ -1,6 +1,6 @@
 const bodyRect = document.body.getBoundingClientRect();
 const scrollToCoursesSection = document.querySelector('.scroll-to-courses');
-const scrollToCoursesSectionFromBigButton = document.querySelector('header>button');
+const scrollToCoursesSectionFromBigButton = document.querySelector('header>.welcome>button');
 const scrollToAboutMeSection = document.querySelector('.scroll-to-about-me');
 const scrollToRecipesSection = document.querySelector('.scroll-to-recipes');
 
@@ -15,7 +15,7 @@ const recipesHeaderRect = recipesHeader.getBoundingClientRect();
 
 // NAVBAR HIDING MECHANISM
 
-const navbar = document.getElementById('banner');
+const navbar = document.getElementById('navbar');
 const contact = document.getElementById('contact');
 let prevScrollPosition = window.scrollY;
 const navbarPositionToHide = window.innerHeight;
@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 
     if (currentScrollPosition >= aboutMeSectionPosition) {
         chudowiczPicture.style.bottom = '40px';
-        chudowiczPicture.style.right = '-75px';
+        chudowiczPicture.style.right = '-100px';
     }
 })
 
@@ -88,3 +88,12 @@ scrollToRecipesSection.addEventListener('click', () => {
     window.scrollTo(0, recipesSectionPosition)
 })
 
+window.matchMedia('(display-mode: fullscreen)').addEventListener('change', ({ matches }) => {
+    if (matches) {
+        window.isFullScreen=true;
+        console.log('full')
+    } else {
+        window.isFullScreen=false;
+        console.log('not full')
+    }
+});
