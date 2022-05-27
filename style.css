@@ -25,7 +25,7 @@ html {
     overflow-x: hidden;
 }
 
-#navbar {
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,11 +39,8 @@ html {
     user-select: none;
 }
 
-.menu-burger {
+.burger__icon-container {
     position: absolute;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center; */
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -56,15 +53,14 @@ html {
     box-shadow: 0 2px 10px 2px rgb(0, 0, 0);
 }
 
-.menu-burger i {
+.burger__icon {
     font-size: clamp(27.5px, 8vw, 30px);
     color: white;
-    /* line-height: clamp(55px, 16vw, 60px); */
     text-shadow: 0 0 3px black;
     transform: translate(0, 55%);
 }
 
-#logo {
+.logo {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -75,7 +71,7 @@ html {
     color: white;
 }
 
-#logo span {
+.logo__span {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -84,16 +80,16 @@ html {
     text-shadow: 1px 1px 5px black;
 }
 
-.logo-top {
+.logo__logo-top {
     font-size: 12vw;
 }
 
-.logo-bottom {
+.logo__logo-bottom {
     font-size: 4.8vw;
     transform: translate(0, -50%);
 }
 
-#logo span i {
+.logo__fork-icon {
     font-size: 8vw;
     color: white;
     padding: 2px;
@@ -117,7 +113,7 @@ header {
     height: calc(100vh - 150px);
 }
 
-.welcome {
+.header__panel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +121,7 @@ header {
     margin: 0 auto;
 }
 
-.welcome button {
+.header__panel-button {
     width: 100%;
     min-height: 85px;
     background-color: white;
@@ -139,11 +135,11 @@ header {
     border: none;
 }
 
-.welcome button span {
+.header__panel-exc-mark {
     display: none;
 }
 
-.welcome p {
+.header__panel-text {
     width: 70%;
     font-size: clamp(15px, 9vw, 45px);
     text-shadow: 1px 1px 5px black;
@@ -161,7 +157,7 @@ header {
 
 /* COURSES */
 
-#courses {
+.courses {
     width: 95%;
     margin: 5vh auto;
 }
@@ -172,28 +168,27 @@ header {
     width: 100%;
 }
 
-.course-image {
+.course__image-container {
     width: 100%;
     height: auto;
     object-fit: cover;
     box-shadow: 0 2px 12px gray;
 }
 
-.course-image img {
+.course__image {
     width: 100%;
     height: 100%;
 }
 
-.course-description {
+.course__description {
     width: 100%;
     box-shadow: 0 2px 12px gray;
 }
 
-.course-description h2 {
+.course__title {
     display: block;
     width: 95%;
     margin: 30px auto 0 auto;
-    /* padding: 30px 0 0 0; */
     font-size: clamp(20px, 6vw, 25px);
     font-weight: bold;
     letter-spacing: 1px;
@@ -203,13 +198,13 @@ header {
     color: var(--color-gray-text);
 }
 
-.line {
+.course__line {
     width: 50%;
     margin: 20px auto;
     border-top: 5px dashed var(--color-claret);
 }
 
-.course-description .description-p {
+.course__text {
     width: 90%;
     margin: 20px auto 0 auto;
     font-size: clamp(16px, 5vw, 18px);
@@ -219,18 +214,13 @@ header {
     color: var(--color-gray-text);
 }
 
-.course-description .info i {
-    font-size: clamp(30px, 8vw, 34px);
-    color: var(--color-claret);
-}
-
-.course-description .info {
+.course__info {
     margin: 20px 0 30px 0;
     width: 100%;
     text-align: center;
 }
 
-.course-description .info span {
+.course__city-and-price {
     display: block;
     margin: 10px;
     font-family: var(--roboto);
@@ -238,7 +228,12 @@ header {
     text-transform: uppercase;
 }
 
-.course-description .info button {
+.course__info-icon {
+    font-size: clamp(30px, 8vw, 34px);
+    color: var(--color-claret);
+}
+
+.course__button {
     font-size: 5.5vw;
     padding: 2px 30px;
     margin: 15px 0;
@@ -254,7 +249,7 @@ header {
 
 /* ABOUT ME */
 
-#about-me {
+.about-me {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -263,7 +258,7 @@ header {
     margin: 0 auto;
 }
 
-#about-me .my-name {
+.about-me__my-name {
     font-size: clamp(20px, 9vw, 30px);
     font-weight: bold;
     font-family: var(--kaushan);
@@ -272,14 +267,26 @@ header {
     margin: 25px 0 15px 0;
 }
 
-.more-about-me {
+.about-me__image-chudowicz {
+    width: 80%;
+    height: auto;    
+}
+
+.about-me__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.more-about-me button {
+.about-me__text {
+    font-size: clamp(16px, 5vw, 18px);
+    font-family: var(--rubik);
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about-me__blog-button {
     margin: 45px 0;
     padding: 5px 25px;
     background-color: black;
@@ -293,21 +300,9 @@ header {
     border: none;
 }
 
-#about-me img {
-    width: 80%;
-    height: auto;    
-}
-
-.more-about-me p {
-    font-size: clamp(16px, 5vw, 18px);
-    font-family: var(--rubik);
-    margin: 15px 0;
-    text-align: justify;
-}
-
 /* RECIPES */
 
-.recipes-header {
+.recipes-from-me__header-container {
     width: 100%;
     background-color: black;
     font-family: var(--rubik);
@@ -318,12 +313,12 @@ header {
     color: white;
 }
 
-.recipes-header p {
+.recipes-from-me__header-text {
     width: 90%;
     margin: 0 auto;
 }
 
-#recipes {
+.recipes {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -343,16 +338,12 @@ header {
     box-shadow: -2px -2px 10px gray;
 }
 
-.recipe img {
+.recipe__image {
     width: 100%;
     height: auto;
 }
 
-div.title {
-    width: 90%;
-}
-
-.recipe h2 {
+.recipe__title {
     display: block;
     width: 90%;
     font-size: clamp(20px, 6vw, 25px);
@@ -363,13 +354,13 @@ div.title {
     color: var(--color-dark-gray);
 }
 
-section.details {
+.recipe__details {
     display: flex;
     flex-direction: column;
     width: 90%;
 }
 
-div.details {
+.recipe__details-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -380,31 +371,31 @@ div.details {
     color: var(--color-dark-gray);
 }
 
-.details div {
+.recipe__detail {
     flex-basis: 35%;
     text-align: center;
 }
 
-.details span {
+.recipe__details-span {
     font-size: clamp(15px, 4.5vw, 16px);
 }
 
-.time {
+.recipe__details-clock-icon {
     font-size: clamp(19px, 6vw, 26px);
 }
 
-.recipe-desc {
+.recipe__description {
     width: 90%;
     font-family: var(--roboto);
     font-size: clamp(16px, 4.5vw, 18px);
     margin: 25px 0;
 }
 
-.recipe-desc p {
+.recipe__description-text {
     text-align: justify;
 }
 
-.recipe button {
+.recipe__description-load-more-button {
     font-size: clamp(16px, 5vw, 18px);
     font-family: var(--roboto);
     font-weight: bold;
@@ -435,11 +426,11 @@ footer {
     
     /* NAVBAR & BURGER-MENU */
     
-    #navbar {
+    .navbar {
         height: 90px;
     }
 
-    .burger-container {
+    .burger__flex-container {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -447,7 +438,7 @@ footer {
         order: 1;
     }
 
-    .menu-burger {
+    .burger__icon-container {
         position: static;
         transform: translate(0, 0);
         width: clamp(40px, 7vw, 45px);
@@ -456,29 +447,29 @@ footer {
         margin: 0 auto;
     }
 
-    .menu-burger i {
+    .burger__icon {
         font-size: clamp(20px, 3.5vw, 22.5px);
         text-shadow: 0 0 2px white;
     }
 
-    #logo {
+    .logo {
         flex-grow: 4;
     }
 
-    #logo span {
+    .logo__span {
         width: 60%;
         margin: 0 0;
     }
 
-    .logo-top {
+    .logo__logo-top {
         font-size: clamp(30px, 5.5vw, 40px);
     }
 
-    .logo-bottom {
+    .logo__logo-bottom {
         font-size: 2vw;
     }
 
-    #logo span i {
+    .logo__fork-icon {
         font-size: clamp(21.5px, 3.2vw, 23px);
     }
 
@@ -490,20 +481,20 @@ footer {
         height: calc(100vh - 90px);
     }
 
-    .welcome {
+    .header__panel {
         flex-direction: row;
         flex-wrap: wrap;
         width: 60%;
         margin-top: 5%;
     }
 
-    .welcome button {
+    .header__panel-button {
         /* width: 80%; */
         font-size: 5.5vw;
         min-height: 0;
     }
 
-    .welcome p {
+    .header__panel-text {
         font-size: clamp(21px, 4vw, 25px);
         width: 100%;
     }
@@ -517,33 +508,32 @@ footer {
         outline: 1px solid rgb(170, 170, 170);
     }
 
-    .course-image {
+    .course__image-container {
         width: 50%;
         height: auto;
         box-shadow: 0 0 0;
-
     }
 
-    .course-description {
+    .course:nth-of-type(even) .course__image-container {
+        order: 1;
+    }
+
+    .course__description {
         position: relative;
         width: 50%;
         box-shadow: 0 0 0;
     }
 
-    .course:nth-of-type(even) .course-image {
-        order: 1;
-    }
-
-    .course-description h2 {
+    .course__title {
         margin: 20px auto 0 auto;
         font-size: clamp(15px, 4vw, 20px);
     }
 
-    .line {
+    .course__line {
         display: none;
     }
 
-    .course-description .description-p {
+    .course__text {
         width: 80%;
         margin: 5% auto 0 auto;
         font-size: clamp(14px, 2.3vw, 18px);
@@ -555,39 +545,35 @@ footer {
         -webkit-box-orient: vertical;
     }
 
-    .course-description .info {
+    .course__info {
         position: absolute;
         bottom: 3%;
         flex-grow: 1;
         margin: 0;
     }
 
-    .course-description .info i {
+    .course__info-icon {
         display: none;
         font-size: clamp(25px, 7vw, 29px);
     }
 
-    .course-description .info span {
+    .course__city-and-price {
         font-size: clamp(9px, 2vw, 14px);
         margin: 5px;
     }
 
-    .course-description .info button {
+    .course__button {
         font-size: 3vw;
     }
 
     /* ABOUT ME */
 
-    #about-me {
+    .about-me {
         position: relative;
         overflow: visible;
     }
 
-    .more-about-me button {
-        margin: 15% 0 15% 0;
-    }
-
-    #about-me img {
+    .about-me__image-chudowicz {
         position: absolute;
         bottom: -5%;
         right: -10%;
@@ -596,13 +582,13 @@ footer {
         z-index: -1;
     }
 
-    .more-about-me p {
-        z-index: 1;
+    .about-me__blog-button {
+        margin: 15% 0 15% 0;
     }
 
     /* RECIPES */
 
-    #recipes {
+    .recipes {
         flex-direction: row;
         justify-content: center;
     }
@@ -613,15 +599,11 @@ footer {
         margin: 1.5%;
     }
 
-    .recipe img {
+    .recipe__image {
         height: 65%;
     }
 
-    div.title {
-        /* width: 100%; */
-    }
-
-    .recipe h2 {
+    .recipe__title {
         text-align: left;
         font-size: clamp(12px, 2.5vw, 18px);
         margin: 2% 0;
@@ -634,32 +616,30 @@ footer {
         -webkit-box-orient: vertical;
     }
 
-    section.details {
-        /* display: none; */
+    .recipe__details {
         width: 60%;
         margin: 2.5% 5%;
     }
 
-    div.details {
+    .recipe__details-container {
         font-size: 1.3vw;
     }
 
-    .details span {
+    .recipe__details-span {
         font-size: 1.8vw;
     }
 
-    .time {
+    .recipe__details-clock-icon {
         font-size: 1.5vw;
     }
 
-    .recipe-desc {
+    .recipe__description {
         display: none;
         margin: 10px 0 20px 0;
     }
 
-    .recipe button {
+    .recipe__description-load-more-button {
         padding: 0;
-        /* font-size: 80%; */
         font-size: clamp(12px, 2.15vw, 18px);
         margin-right: 7%;
         letter-spacing: .5px;

@@ -6,442 +6,319 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="wrapper">
-        <div id="navbar">
-            <div class="burger-container"><div class="menu-burger"><i class="fas fa-bars"></i></div></div>
-            <div id="logo">
-                    <span class="logo-top">Smak<i class="fas fa-utensils"></i>sz</span>
-                    <span class="logo-bottom">warsztaty kulinarne w całej Polsce!</span>
+        <section class="wrapper">
+        <section class="navbar">
+            <div class="burger__flex-container"><div class="burger__icon-container"><i class="fas fa-bars burger__icon"></i></div></div>
+            <div class="logo">
+                    <span class="logo__span logo__logo-top">Smak<i class="fas fa-utensils logo__fork-icon"></i>sz</span>
+                    <span class="logo__span logo__logo-bottom">warsztaty kulinarne w całej Polsce!</span>
             </div>
-            <nav>
+            <!-- <nav>
                 <ul>
                     <li><a class="scroll-to-courses"><i class="far fa-calendar-alt"></i>nadchodzące szkolenia</a></li>
                     <li><a class="scroll-to-about-me">o mnie</a></li>
                     <li><a class="scroll-to-recipes">garść przepisów</a></li>
                     <li><a>galeria</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div id="contact">
+            </nav> -->
+        </section>
+        <!-- <div id="contact">
             <i class="fas fa-envelope-open-text"></i>
-        </div>
+        </div> -->
 
         <header>
-            <div class="welcome">
-                <button>Zapisz się na kurs <span>!</span></button>
-                <p>Wiele osób już zdecydowało i są zadowoleni do dziś z warsztatów.</p>
+            <div class="header__panel">
+                <button class="header__panel-button">Zapisz się na kurs <span class="header__panel-exc-mark">!</span></button>
+                <p class="header__panel-text">Wiele osób już zdecydowało i są zadowoleni do dziś z warsztatów.</p>
             </div>
             
         </header>
 
-        <section id="courses">
+        <section class="courses">
             <div class="course">
-                <div class="course-image">
-                    <img src="img/1-course.jfif" alt="">
+                <div class="course__image-container">
+                    <img class="course__image" src="img/1-course.jfif" alt="">
                 </div>
-                <div class="course-description">
-                    <h2>tradycyjna polska kuchnia</h2>
-                    <div class="line"></div>
-                    <p class="description-p">
+                <div class="course__description">
+                    <h2 class="course__title">tradycyjna polska kuchnia</h2>
+                    <div class="course__line"></div>
+                    <p class="course__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta debitis dolor veniam in assumenda similique impedit! Culpa tenetur corporis saepe in, hic dolor doloremque praesentium perferendis excepturi, minima ducimus...
                     </p>
-                    <div class="info">
-                        <span><i class="fas fa-info-circle"></i></span>
-                        <span><strong>wrocław</strong> / cena za osobę: <strong>350 pln</strong></span>
-                        <button>zapisz się</button>
+                    <div class="course__info">
+                        <span class="course__icon-container"><i class="course__info-icon fas fa-info-circle"></i></span>
+                        <span class="course__city-and-price"><strong>wrocław</strong> / cena za osobę: <strong>350 pln</strong></span>
+                        <button class="course__button">zapisz się</button>
                     </div>
                 </div>
             </div>
 
             <div class="course">
-                <div class="course-image">
-                    <img src="img/2-course.jpg" alt="">
+                <div class="course__image-container">
+                    <img class="course__image" src="img/2-course.jpg" alt="">
                 </div>
-                <div class="course-description">
-                    <h2>ogarnij menu śniadaniowe</h2>
-                    <div class="line"></div>
-                    <p class="description-p">
+                <div class="course__description">
+                    <h2 class="course__title">ogarnij menu śniadaniowe</h2>
+                    <div class="course__title"></div>
+                    <p class="course__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta debitis dolor veniam in assumenda similique impedit! Culpa tenetur corporis saepe in, hic dolor doloremque praesentium perferendis excepturi, minima ducimus...
                     </p>
-                    <div class="info">
-                        <span><i class="fas fa-info-circle"></i></span>
-                        <span><strong>katowice</strong> / cena za osobę: <strong>350 pln</strong></span>
-                        <button>zapisz się</button>
+                    <div class="course__info">
+                        <span class="course__icon-container"><i class="course__info-icon fas fa-info-circle"></i></span>
+                        <span class="course__city-and-price"><strong>katowice</strong> / cena za osobę: <strong>350 pln</strong></span>
+                        <button class="course__button">zapisz się</button>
                     </div>
                 </div>
             </div>
 
             <div class="course">
-                <div class="course-image">
-                    <img src="img/3-course.jpg" alt="">
+                <div class="course__image-container">
+                    <img class="course__image" src="img/3-course.jpg" alt="">
                 </div>
-                <div class="course-description">
-                    <h2>kuchnia włoska</h2>
-                    <div class="line"></div>
-                    <p class="description-p">
+                <div class="course__description">
+                    <h2 class="course__title">kuchnia włoska</h2>
+                    <div class="course__line"></div>
+                    <p class="course__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta debitis dolor veniam in assumenda similique impedit! Culpa tenetur corporis saepe in, hic dolor doloremque praesentium perferendis excepturi, minima ducimus...
                     </p>
-                    <div class="info">
-                        <span><i class="fas fa-info-circle"></i></span>
-                        <span><strong>poznań</strong> / cena za osobę: <strong>350 pln</strong></span>
-                        <button>zapisz się</button>
+                    <div class="course__info">
+                        <span class="course__icon-container"><i class="course__info-icon fas fa-info-circle"></i></span>
+                        <span class="course__city-and-price"><strong>poznań</strong> / cena za osobę: <strong>350 pln</strong></span>
+                        <button class="course__button">zapisz się</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about-me">
-            <p class="my-name">marek "smakosz" chudowicz</p>
-            <div class="more-about-me">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in egestas erat imperdiet sed euismod. Neque convallis a cras semper. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Consectetur libero id faucibus nisl tincidunt. Amet consectetur adipiscing elit duis tristique. Arcu dui vivamus arcu felis bibendum ut tristique et. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Id volutpat lacus laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit amet. Vulputate dignissim suspendisse in est. Dolor magna eget est lorem ipsum dolor sit amet.</p>
-                <!-- <div class="horizontal-line"></div> -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in egestas erat imperdiet sed euismod. Neque convallis a cras semper. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Consectetur libero id faucibus nisl tincidunt. Amet consectetur adipiscing elit duis tristique. Arcu dui vivamus arcu felis bibendum ut tristique et.
+        <section class="about-me">
+            <p class="about-me__my-name">marek "smakosz" chudowicz</p>
+            <div class="about-me__container">
+                <p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in egestas erat imperdiet sed euismod. Neque convallis a cras semper. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Consectetur libero id faucibus nisl tincidunt. Amet consectetur adipiscing elit duis tristique. Arcu dui vivamus arcu felis bibendum ut tristique et. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Id volutpat lacus laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit amet. Vulputate dignissim suspendisse in est. Dolor magna eget est lorem ipsum dolor sit amet.</p>
+                <p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in egestas erat imperdiet sed euismod. Neque convallis a cras semper. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Consectetur libero id faucibus nisl tincidunt. Amet consectetur adipiscing elit duis tristique. Arcu dui vivamus arcu felis bibendum ut tristique et.
                 </p>
-                <button>mój blog</button>
+                <button class="about-me__blog-button">mój blog</button>
             </div>
-            <img src="img/chudowicz.png" alt="">
-            <!-- <div class="recipes-header"><p>garść przepisów ode mnie...</p></div> -->
+            <img class="about-me__image-chudowicz" src="img/chudowicz.png" alt="">
         </section>
 
-        <section id="recipes-from-me">
+        <section class="recipes-from-me">
 
-        <div class="recipes-header"><p>garść przepisów ode mnie...</p></div>
+        <div class="recipes-from-me__header-container"><p class="recipes-from-me__header-text">garść przepisów ode mnie...</p></div>
 
-        <section id="recipes">
+        <section class="recipes">
 
             <div class="recipe">
-                <img src="img/1-course.jfif" alt="">
-                <h2>żórek z jajkiem w bułce</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
+                <img class="recipe__image" src="img/1-course.jfif" alt="">
+                <h2 class="recipe__title">żórek z jajkiem w bułce</h2>
+                <section class="recipe__details">
+                    <div class="recipe__details-container">
+                        <div class="recipe__detail">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="level">
+                        <div class="recipe__detail">
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                             <i class="far fa-circle"></i>
                         </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
+                        <div class="recipe__detail">
+                            <i class="recipe__details-clock-icon far fa-clock"></i>
                         </div>
                     </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>113 ocen <b>|</b> 34 komentarzy</span>
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">113 ocen <b>|</b> 34 komentarzy</span>
                         </div>
-                        <div class="level-text">
-                            <span>średnie</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">średnie</span>
                         </div>
-                        <div class="time-text">
-                            <span>1 godzina i 30 minut</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">1 godzina i 30 minut</span>
                         </div>
-                    </div>
+                    </section>
                 </section>
 
-                <div class="recipe-desc">
-                    <p>Co kryją w sobie kupny żurek i barszcz biały? Polskie święta nie mogą obyć się bez zupy...</p>
+                <div class="recipe__description">
+                    <p class="recipe__description-text">Co kryją w sobie kupny żurek i barszcz biały? Polskie święta nie mogą obyć się bez zupy...</p>
                 </div>
 
-                <button>więcej...</button>
+                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
 
             <div class="recipe">
-                <img src="img/2-course.jpg" alt="">
-                <h2>włoskie śniadaniowe</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
+                <img class="recipe__image" src="img/2-course.jpg" alt="">
+                <h2 class="recipe__title">włoskie śniadaniowe</h2>
+                <section class="recipe__details">
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="level">
+                        <div class="recipe__detail">
                             <i class="fas fa-circle"></i>
                             <i class="far fa-circle"></i>
                             <i class="far fa-circle"></i>
                         </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
+                        <div class="recipe__detail">
+                            <i class="recipe__details-clock-icon far fa-clock"></i>
                         </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>213 ocen <b>|</b> 63 komentarzy</span>
+                    </section>
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">213 ocen <b>|</b> 63 komentarzy</span>
                         </div>
-                        <div class="level-text">
-                            <span>łatwe</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">łatwe</span>
                         </div>
-                        <div class="time-text">
-                            <span>30 minut</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">30 minut</span>
                         </div>
-                    </div>
+                    </section>
                 </section>
 
-                <div class="recipe-desc">
-                    <p>Colazione, czyli po włosku śniadanie, jest ważnym punktem dnia dla każdego Włocha...</p>
+                <div class="recipe__description">
+                    <p class="recipe__description-text">Colazione, czyli po włosku śniadanie, jest ważnym punktem dnia dla każdego Włocha...</p>
                 </div>
 
-                <button>więcej...</button>
+                <button class="recipe__description-load-more-button">więcej...</button>
+            </div>
+
+            <!-- TU ZACZYNAMY ============== -->
+
+            <div class="recipe">
+                <img class="recipe__image" src="img/3-graphics.jpg" alt="">
+                <h2 class="recipe__title">oliwa z oliwek domowej roboty</h2>
+                <section class="recipe__details">
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="recipe__detail">
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="recipe__detail">
+                            <i class="recipe__details-clock-icon far fa-clock"></i>
+                        </div>
+                    </section>
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">166 ocen <b>|</b> 96 komentarzy</span>
+                        </div>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">średnie</span>
+                        </div>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">1 godzina</span>
+                        </div>
+                    </section>
+                </section>
+
+                <div class="recipe__description">
+                    <p class="recipe__description-text">W basenie Morza Śródziemnego oliwa z oliwek traktowana jest jak bezcenny dar bogów...</p>
+                </div>
+
+                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
 
             <div class="recipe">
-                <img src="img/3-course.jpg" alt="">
-                <h2>domowa pizza z oregano</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="level">
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>93 ocen <b>|</b> 26 komentarzy</span>
-                        </div>
-                        <div class="level-text">
-                            <span>łatwe</span>
-                        </div>
-                        <div class="time-text">
-                            <span>30 minut</span>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="recipe-desc">
-                    <p>Oto niezawodny przepis na ciasto na pizzę, wypróbuj go i ciesz się smakiem pysznej domowej pizzy...</p>
-                </div>
-
-                <button>więcej...</button>
-            </div>
-
-            <div class="recipe">
-                <img src="img/1-graphics.jpg" alt="">
-                <h2>chińskie pierożki</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="level">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                        </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>43 ocen <b>|</b> 22 komentarzy</span>
-                        </div>
-                        <div class="level-text">
-                            <span>trudne</span>
-                        </div>
-                        <div class="time-text">
-                            <span>2 godziny</span>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="recipe-desc">
-                    <p>Dim sum to małe azjatyckie przekąski. Należą do nich między innymi chińskie pierożki...</p>
-                </div>
-
-                <button>więcej...</button>
-            </div>
-
-            <div class="recipe">
-                <img src="img/2-graphics.jpg" alt="">
-                <h2>stek z łososia z ziołami</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="level">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>113 ocen <b>|</b> 59 komentarzy</span>
-                        </div>
-                        <div class="level-text">
-                            <span>średnie</span>
-                        </div>
-                        <div class="time-text">
-                            <span>1 godzina i 30 minut</span>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="recipe-desc">
-                    <p>Rodzinny obiad w stylu skandynawskim i polskim. Są to steki z łososia...</p>
-                </div>
-
-                <button>więcej...</button>
-            </div>
-
-            <div class="recipe">
-                <img src="img/3-graphics.jpg" alt="">
-                <h2>oliwa z oliwek domowej roboty</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="level">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>166 ocen <b>|</b> 96 komentarzy</span>
-                        </div>
-                        <div class="level-text">
-                            <span>średnie</span>
-                        </div>
-                        <div class="time-text">
-                            <span>1 godzina</span>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="recipe-desc">
-                    <p>W basenie Morza Śródziemnego oliwa z oliwek traktowana jest jak bezcenny dar bogów...</p>
-                </div>
-
-                <button>więcej...</button>
-            </div>
-
-            <div class="recipe">
-                <img src="img/4-graphics.jpg" alt="">
-                    <h2>pita z gyrosem i frytkami</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
+                <img class="recipe__image" src="img/4-graphics.jpg" alt="">
+                    <h2 class="recipe__title">pita z gyrosem i frytkami</h2>
+                <section class="recipe__details">
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="level">
+                        <div class="recipe__detail">
                             <i class="fas fa-circle"></i>
                             <i class="far fa-circle"></i>
                             <i class="far fa-circle"></i>
                         </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
+                        <div class="recipe__detail">
+                            <i class="recipe__details-clock-icon far fa-clock"></i>
                         </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>89 ocen <b>|</b> 55 komentarzy</span>
+                    </section>
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">89 ocen <b>|</b> 55 komentarzy</span>
                         </div>
-                        <div class="level-text">
-                            <span>łatwe</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">łatwe</span>
                         </div>
-                        <div class="time-text">
-                            <span>30 minut</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">30 minut</span>
                         </div>
-                    </div>
+                    </section>
                 </section>
 
-                <div class="recipe-desc">
-                    <p>Pita to okrągłe, pszenne, płaskie placki, popularne w krajach Bliskiego Wschodu i Maghrebu...</p>
+                <div class="recipe__description">
+                    <p class="recipe__description-text">Pita to okrągłe, pszenne, płaskie placki, popularne w krajach Bliskiego Wschodu i Maghrebu...</p>
                 </div>
 
-                <button>więcej...</button>
+                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
 
             <div class="recipe">
-                <img src="img/5-graphics.jpg" alt="">
-                <h2>szakszuka</h2>
-                <section class="details">
-                    <div class="details">
-                        <div class="rating">
+                <img class="recipe__image" src="img/5-graphics.jpg" alt="">
+                <h2 class="recipe__title">szakszuka</h2>
+                <section class="recipe__details">
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="level">
+                        <div class="recipe__detail">
                             <i class="fas fa-circle"></i>
                             <i class="far fa-circle"></i>
                             <i class="far fa-circle"></i>
                         </div>
-                        <div class="time">
-                            <i class="far fa-clock"></i>
+                        <div class="recipe__detail">
+                            <i class="recipe__details-clock-icon far fa-clock"></i>
                         </div>
-                    </div>
-                    <div class="details">
-                        <div class="rating-text">
-                            <span>89 ocen <b>|</b> 55 komentarzy</span>
+                    </section>
+                    <section class="recipe__details-container">
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">89 ocen <b>|</b> 55 komentarzy</span>
                         </div>
-                        <div class="level-text">
-                            <span>łatwe</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">łatwe</span>
                         </div>
-                        <div class="time-text">
-                            <span>15-20 minut</span>
+                        <div class="recipe__detail">
+                            <span class="recipe__details-span">15-20 minut</span>
                         </div>
-                    </div>
+                    </section>
                 </section>
 
-                <div class="recipe-desc">
-                    <p>Szakszuka, czyli dosłownie "mieszanka" to danie prosto z Bliskiego Wschodu i Północnej Afryki....</p>
+                <div class="recipe__description">
+                    <p class="recipe__description-text">Szakszuka, czyli dosłownie "mieszanka" to danie prosto z Bliskiego Wschodu i Północnej Afryki....</p>
                 </div>
 
-                <button>więcej...</button>
+                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
         </section>
 
     </section>
 
         <footer><span>&copygrudzień 2021 dawid brudny (wersja beta)</span></footer>
-    </div>
+    </section>
 
     <!-- <script src="index.js"></script> -->
     </body>
