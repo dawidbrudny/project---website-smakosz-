@@ -13,14 +13,14 @@
                     <span class="logo__span logo__logo-top">Smak<i class="fas fa-utensils logo__fork-icon"></i>sz</span>
                     <span class="logo__span logo__logo-bottom">warsztaty kulinarne w całej Polsce!</span>
             </div>
-            <!-- <nav>
-                <ul>
-                    <li><a class="scroll-to-courses"><i class="far fa-calendar-alt"></i>nadchodzące szkolenia</a></li>
-                    <li><a class="scroll-to-about-me">o mnie</a></li>
-                    <li><a class="scroll-to-recipes">garść przepisów</a></li>
-                    <li><a>galeria</a></li>
+            <nav>
+                <ul class="navigation__list">
+                    <li class="navigation__list-item"><a class="navigation__link"><i class="navigation__calendar-icon far fa-calendar-alt"></i>nadchodzące szkolenia</a></li>
+                    <li class="navigation__list-item"><a class="navigation__link">o mnie</a></li>
+                    <li class="navigation__list-item"><a class="navigation__link">garść przepisów</a></li>
+                    <li class="navigation__list-item"><a class="navigation__link">galeria</a></li>
                 </ul>
-            </nav> -->
+            </nav>
         </section>
         <!-- <div id="contact">
             <i class="fas fa-envelope-open-text"></i>
@@ -37,7 +37,7 @@
         <section class="courses">
             <div class="course">
                 <div class="course__image-container">
-                    <img class="course__image" src="img/1-course.jfif" alt="">
+                    <img class="course__image" src="img/1-course.jpg" alt="">
                 </div>
                 <div class="course__description">
                     <h2 class="course__title">tradycyjna polska kuchnia</h2>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="course__description">
                     <h2 class="course__title">ogarnij menu śniadaniowe</h2>
-                    <div class="course__title"></div>
+                    <div class="course__line"></div>
                     <p class="course__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta debitis dolor veniam in assumenda similique impedit! Culpa tenetur corporis saepe in, hic dolor doloremque praesentium perferendis excepturi, minima ducimus...
                     </p>
@@ -108,210 +108,200 @@
         <section class="recipes">
 
             <div class="recipe">
-                <img class="recipe__image" src="img/1-course.jfif" alt="">
-                <h2 class="recipe__title">żórek z jajkiem w bułce</h2>
-                <section class="recipe__details">
-                    <div class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="recipe__details-clock-icon far fa-clock"></i>
-                        </div>
-                    </div>
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">113 ocen <b>|</b> 34 komentarzy</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">średnie</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">1 godzina i 30 minut</span>
-                        </div>
+                <img class="recipe__image" src="img/1-graphics.jfif" alt="">
+                <section class="recipe__description">
+                    <h2 class="recipe__title">żórek z jajkiem w bułce</h2>
+                    <section class="recipe__details">
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="recipe__details-clock-icon far fa-clock"></i>
+                            </div>
+                        </section>
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">113 ocen <b>|</b> 34 komentarzy</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">średnie</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">1 godzina i 30 minut</span>
+                            </div>
+                        </section>
                     </section>
+
+                        <p class="recipe__text">Co kryją w sobie kupny żurek i barszcz biały? Polskie święta nie mogą obyć się bez zupy...</p>
+
+                    <button class="recipe__load-more-button">więcej...</button>
                 </section>
-
-                <div class="recipe__description">
-                    <p class="recipe__description-text">Co kryją w sobie kupny żurek i barszcz biały? Polskie święta nie mogą obyć się bez zupy...</p>
-                </div>
-
-                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
 
             <div class="recipe">
                 <img class="recipe__image" src="img/2-course.jpg" alt="">
-                <h2 class="recipe__title">włoskie śniadaniowe</h2>
-                <section class="recipe__details">
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="recipe__details-clock-icon far fa-clock"></i>
-                        </div>
+                <section class="recipe__description">
+                    <h2 class="recipe__title">włoskie śniadaniowe</h2>
+                    <section class="recipe__details">
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="recipe__details-clock-icon far fa-clock"></i>
+                            </div>
+                        </section>
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">213 ocen <b>|</b> 63 komentarzy</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">łatwe</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">30 minut</span>
+                            </div>
+                        </section>
                     </section>
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">213 ocen <b>|</b> 63 komentarzy</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">łatwe</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">30 minut</span>
-                        </div>
-                    </section>
+                    <p class="recipe__text">Colazione, czyli po włosku śniadanie, jest ważnym punktem dnia dla każdego Włocha...</p>
+                    <button class="recipe__load-more-button">więcej...</button>
                 </section>
-
-                <div class="recipe__description">
-                    <p class="recipe__description-text">Colazione, czyli po włosku śniadanie, jest ważnym punktem dnia dla każdego Włocha...</p>
-                </div>
-
-                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
-
-            <!-- TU ZACZYNAMY ============== -->
 
             <div class="recipe">
                 <img class="recipe__image" src="img/3-graphics.jpg" alt="">
-                <h2 class="recipe__title">oliwa z oliwek domowej roboty</h2>
-                <section class="recipe__details">
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="recipe__details-clock-icon far fa-clock"></i>
-                        </div>
+                <section class="recipe__description">
+                    <h2 class="recipe__title">oliwa z oliwek domowej roboty</h2>
+                    <section class="recipe__details">
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="recipe__details-clock-icon far fa-clock"></i>
+                            </div>
+                        </section>
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">166 ocen <b>|</b> 96 komentarzy</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">średnie</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">1 godzina</span>
+                            </div>
+                        </section>
                     </section>
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">166 ocen <b>|</b> 96 komentarzy</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">średnie</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">1 godzina</span>
-                        </div>
-                    </section>
+                    <p class="recipe__text">W basenie Morza Śródziemnego oliwa z oliwek traktowana jest jak bezcenny dar bogów...</p>
+                    <button class="recipe__load-more-button">więcej...</button>
                 </section>
-
-                <div class="recipe__description">
-                    <p class="recipe__description-text">W basenie Morza Śródziemnego oliwa z oliwek traktowana jest jak bezcenny dar bogów...</p>
-                </div>
-
-                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
 
             <div class="recipe">
                 <img class="recipe__image" src="img/4-graphics.jpg" alt="">
+                <section class="recipe__description">
                     <h2 class="recipe__title">pita z gyrosem i frytkami</h2>
-                <section class="recipe__details">
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="recipe__details-clock-icon far fa-clock"></i>
-                        </div>
+                    <section class="recipe__details">
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="recipe__details-clock-icon far fa-clock"></i>
+                            </div>
+                        </section>
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">89 ocen <b>|</b> 55 komentarzy</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">łatwe</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">30 minut</span>
+                            </div>
+                        </section>
                     </section>
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">89 ocen <b>|</b> 55 komentarzy</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">łatwe</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">30 minut</span>
-                        </div>
-                    </section>
+                    <p class="recipe__text">Pita to okrągłe, pszenne, płaskie placki, popularne w krajach Bliskiego Wschodu i Maghrebu...</p>
+                    <button class="recipe__load-more-button">więcej...</button>
                 </section>
-
-                <div class="recipe__description">
-                    <p class="recipe__description-text">Pita to okrągłe, pszenne, płaskie placki, popularne w krajach Bliskiego Wschodu i Maghrebu...</p>
-                </div>
-
-                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
 
             <div class="recipe">
                 <img class="recipe__image" src="img/5-graphics.jpg" alt="">
-                <h2 class="recipe__title">szakszuka</h2>
-                <section class="recipe__details">
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="fas fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-circle"></i>
-                        </div>
-                        <div class="recipe__detail">
-                            <i class="recipe__details-clock-icon far fa-clock"></i>
-                        </div>
+                <section class="recipe__description">
+                    <h2 class="recipe__title">szakszuka</h2>
+                    <section class="recipe__details">
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <div class="recipe__detail">
+                                <i class="recipe__details-clock-icon far fa-clock"></i>
+                            </div>
+                        </section>
+                        <section class="recipe__details-container">
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">89 ocen <b>|</b> 55 komentarzy</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">łatwe</span>
+                            </div>
+                            <div class="recipe__detail">
+                                <span class="recipe__details-span">15-20 minut</span>
+                            </div>
+                        </section>
                     </section>
-                    <section class="recipe__details-container">
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">89 ocen <b>|</b> 55 komentarzy</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">łatwe</span>
-                        </div>
-                        <div class="recipe__detail">
-                            <span class="recipe__details-span">15-20 minut</span>
-                        </div>
-                    </section>
+                    <p class="recipe__text">Szakszuka, czyli dosłownie "mieszanka" to danie prosto z Bliskiego Wschodu i Północnej Afryki....</p>
+                    <button class="recipe__load-more-button">więcej...</button>
                 </section>
-
-                <div class="recipe__description">
-                    <p class="recipe__description-text">Szakszuka, czyli dosłownie "mieszanka" to danie prosto z Bliskiego Wschodu i Północnej Afryki....</p>
-                </div>
-
-                <button class="recipe__description-load-more-button">więcej...</button>
             </div>
         </section>
 
