@@ -668,7 +668,7 @@ footer {
 
 /* TABLET VERSION */
 
-@media (min-width: 768px) and (max-width: 1023px) and (min-height: 426px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     
     /* NAVBAR & NAVIGATION */
     
@@ -925,7 +925,7 @@ footer {
 
 /* LAPTOP VERSION */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (orientation: landscape) {
 
 
     .navbar {
@@ -946,16 +946,16 @@ footer {
     }
 
     .logo__logo-top {
-        font-size: 2.8vw;
+        font-size: clamp(10px, 2.8vw, 30px);
     }
 
     .logo__logo-bottom {
-        font-size: 1vw;
+        font-size: clamp(5px, 1vw, 12px);
         letter-spacing: 1px;
     }
 
     .logo__fork-icon {
-        font-size: 1.65vw;
+        font-size: clamp(10px, 1.65vw, 17px);
         color: white;
         /* text-shadow: 0 0 1px b; */
         /* padding: 1px; */
@@ -993,7 +993,7 @@ footer {
     }
 
     .navigation__calendar-icon {
-        font-size: 1.7vw;
+        font-size: clamp(5px, 1.7vw, 20px);
         padding: 0 5px;
     }
 
@@ -1037,6 +1037,10 @@ footer {
 
     /* COURSES */
 
+    .courses {
+        width: 80%;
+    }
+
     .course {
         flex-direction: row;
         height: auto;
@@ -1062,25 +1066,24 @@ footer {
 
     .course__title {
         margin: 20px auto 0 auto;
-        font-size: clamp(15px, 4vw, 20px);
+        font-size: clamp(15px, 1.7vw, 19px);
     }
 
     .course__line {
         /* display: none; */
-        margin: 15px auto;
+        margin: 20px auto;
     }
 
     .course__text {
         width: 80%;
-        margin: 2% auto;
-        font-size: clamp(14px, 2.3vw, 18px);
+        margin: 5% auto;
+        font-size: clamp(14px, 1.4vw, 18px);
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 5; 
-        line-clamp: 5; 
-        -webkit-box-orient: vertical;
-        /* number of lines to show */
+        -webkit-line-clamp: 4; /* number of lines to show */
+        line-clamp: 4; 
+        -webkit-box-orient: vertical;     
     }
 
     .course__info {
@@ -1091,41 +1094,45 @@ footer {
 
     .course__info-icon {
         /* display: none; */
-        font-size: clamp(25px, 7vw, 29px);
+        font-size: clamp(25px, 1.5vw, 27px);
     }
 
     .course__city-and-price {
-        font-size: clamp(9px, 2vw, 14px);
+        font-size: clamp(9px, 1.2vw, 18px);
         margin: 5px;
     }
 
     .course__button {
-        font-size: clamp(14px, 3vw, 20px);
+        font-size: clamp(14px, 1.6vw, 19px);
     }
 
     /* ABOUT ME */
 
     .about-me {
         position: relative;
-        /* overflow: visible; */
+        width: 80%;
     }
 
     .about-me__my-name {
-        font-size: 3.5vw;
+        font-size: clamp(20px, 3.5vw, 30px);
     }
 
     .about-me__image-chudowicz {
         position: absolute;
         bottom: -5%;
-        right: -10%;
-        width: 42%;
+        right: -16%;
+        width: 30%;
         transform:rotate(-35deg);
         z-index: -1;
     }
 
+    .about-me__text {
+        font-size: clamp(14px, 5vw, 16px);
+    }
+
     .about-me__blog-button {
-        margin: 20% 0 20% 0;
-        font-size: 2.5vw;
+        margin: 9% 0;
+        font-size: clamp(17px, 2.5vw, 19px);
     }
 
     /* RECIPES */
@@ -1137,7 +1144,7 @@ footer {
     }
 
     .recipes-from-me__header-text {
-        font-size: clamp(20px, 4vw, 26px);
+        font-size: clamp(20px, 4vw, 23px);
     }
 
     .recipes {
@@ -1191,7 +1198,7 @@ footer {
     }
 
     .recipe__text {
-        font-size: 1.5vw;
+        font-size: clamp(13px, 1.5vw, 15px);
         width: 80%;
         margin: 5% auto;
         overflow: hidden;
@@ -1207,6 +1214,65 @@ footer {
         padding: 8px 15px;
         margin: 7% auto;
         letter-spacing: .5px;
+    }
+}
+
+/* LAPTOP MEDIUM/LARGE VERSION */
+
+@media (min-width: 1280px) {
+
+    /* HEADER */
+
+    .header__panel {
+        width: 50%;
+        right: 3%;
+    }
+
+    .header__panel-button {
+        font-size: 2.5vw;
+    }
+
+    .header__panel-text {
+        width: 40%;
+        font-size: 2vw;
+    }
+
+    /* COURSES */
+
+    .course__text {
+        -webkit-line-clamp: 5; /* number of lines to show */
+        line-clamp: 5; 
+    }
+
+    /* ABOUT ME */
+
+    .about-me__container {
+        justify-content: flex-end;
+    }
+
+    .about-me__image-chudowicz {
+        width: 30%;
+        right: -21%;
+        /* bottom: -7%; */
+    }
+
+    .about-me__text {
+        width: 47%;
+        margin: 15px;
+    }
+
+    .about-me__blog-button {
+        margin: 3% 15% 8% 0;
+    }
+
+    /* RECIPES */ 
+
+    .recipes {
+        width: 80%;
+    }
+
+    .recipe__image {
+        height: 16vw;
     }
 }
 
