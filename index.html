@@ -6,8 +6,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="wrapper">
         <section class="navbar">
+            <section class="shopping__container shopping__container-orientation--landscape">
+                <section class="shopping__info-panel">
+                    <div class="shopping__icon-container">
+                        <i class="fas fa-cart-arrow-down shopping__icon"></i>
+                        <div class="shopping__counter shopping__counter-state-disabled">
+                            0
+                        </div>
+                        <div class="shopping__click-here">
+                            <i class="far fa-hand-point-right shopping__click-icon"></i>
+                        </div>
+                        <div class="shopping__price-counter shopping__price-counter-state--disabled">
+                            <span class="shopping__price">0</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
             <div class="burger__flex-container"><div class="burger__icon-container"><i class="fas fa-bars burger__icon"></i></div></div>
             <div class="logo">
                     <span class="logo__span logo__logo-top">Smak<i class="fas fa-utensils logo__fork-icon"></i>sz</span>
@@ -15,26 +30,27 @@
             </div>
             <nav>
                 <ul class="navigation__list">
-                    <li class="navigation__list-item"><a class="navigation__link"><i class="navigation__calendar-icon far fa-calendar-alt"></i>nadchodzące szkolenia</a></li>
-                    <li class="navigation__list-item"><a class="navigation__link">o mnie</a></li>
-                    <li class="navigation__list-item"><a class="navigation__link">garść przepisów</a></li>
+                    <li class="navigation__list-item"><a href="#scroll-to-courses" class="navigation__link"><i class="navigation__calendar-icon far fa-calendar-alt"></i>nadchodzące szkolenia</a></li>
+                    <li class="navigation__list-item"><a href="#scroll-to-about-me" class="navigation__link">o mnie</a></li>
+                    <li class="navigation__list-item"><a href="#scroll-to-recipes" class="navigation__link">garść przepisów</a></li>
                     <li class="navigation__list-item"><a class="navigation__link">galeria</a></li>
                 </ul>
             </nav>
         </section>
+        <section class="wrapper">
         <!-- <div id="contact">
             <i class="fas fa-envelope-open-text"></i>
         </div> -->
 
         <header>
             <div class="header__panel">
-                <button class="header__panel-button">Zapisz się na kurs <span class="header__panel-exc-mark">!</span></button>
+                <button class="header__panel-button"><a href="#scroll-to-courses">Zapisz się na kurs <span class="header__panel-exc-mark">!</span></a></button>
                 <p class="header__panel-text">Wiele osób już zdecydowało i są zadowoleni do dziś z warsztatów.</p>
             </div>
             
         </header>
 
-        <section class="courses">
+        <section class="courses" id="scroll-to-courses">
             <div class="course">
                 <div class="course__image-container">
                     <img class="course__image" src="img/1-course.jpg" alt="">
@@ -65,7 +81,7 @@
                     </p>
                     <div class="course__info">
                         <span class="course__icon-container"><i class="course__info-icon fas fa-info-circle"></i></span>
-                        <span class="course__city-and-price"><strong>katowice</strong> / cena za osobę: <strong>350 pln</strong></span>
+                        <span class="course__city-and-price"><strong>katowice</strong> / cena za osobę: <strong>250 pln</strong></span>
                         <button class="course__button">zapisz się</button>
                     </div>
                 </div>
@@ -83,14 +99,14 @@
                     </p>
                     <div class="course__info">
                         <span class="course__icon-container"><i class="course__info-icon fas fa-info-circle"></i></span>
-                        <span class="course__city-and-price"><strong>poznań</strong> / cena za osobę: <strong>350 pln</strong></span>
+                        <span class="course__city-and-price"><strong>poznań</strong> / cena za osobę: <strong>450 pln</strong></span>
                         <button class="course__button">zapisz się</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-me">
+        <section class="about-me" id="scroll-to-about-me">
             <p class="about-me__my-name">marek "smakosz" chudowicz</p>
             <div class="about-me__container">
                 <p class="about-me__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quis, maxime, facere expedita laboriosam veniam repellat mollitia ex, nihil veritatis explicabo. Nihil in exercitationem unde laborum, iusto dignissimos repudiandae deserunt.
@@ -113,7 +129,7 @@
 
         <div class="recipes-from-me__header-container"><p class="recipes-from-me__header-text">garść przepisów ode mnie...</p></div>
 
-        <section class="recipes">
+        <section class="recipes" id="scroll-to-recipes">
 
             <div class="recipe">
                 <img class="recipe__image" src="img/1-graphics.jfif" alt="">
@@ -311,6 +327,7 @@
                     <button class="recipe__load-more-button">więcej...</button>
                 </section>
             </div>
+            
         </section>
 
     </section>
@@ -318,6 +335,30 @@
         <footer><span>&copygrudzień 2021 dawid brudny (wersja beta)</span></footer>
     </section>
 
-    <!-- <script src="index.js"></script> -->
+    <div class="keep-moving__container keep-moving__container-state--disabled">
+        <i class="fas fa-arrow-down keep-moving__icon"></i>
+    </div>
+    <section class="
+    shopping__container shopping__container-state--disabled 
+    shopping__container-orientation--portrait 
+    shopping__container-version--bigger-devices
+    ">
+        <section class="shopping__info-panel">
+            <div class="shopping__icon-container">
+                <i class="fas fa-cart-arrow-down shopping__icon"></i>
+                <div class="shopping__counter">
+                    0
+                </div>
+                <div class="shopping__click-here">
+                    <i class="far fa-hand-point-right shopping__click-icon"></i>
+                </div>
+            </div>
+            <div class="shopping__price-counter">
+                <span class="shopping__price-text">Do zapłaty: <span class="shopping__price">0</span> PLN</span>
+            </div>
+        </section>
+    </section>
+
+    <script src="index.js"></script>
     </body>
 </html>
