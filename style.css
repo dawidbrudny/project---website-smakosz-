@@ -900,7 +900,7 @@ footer {
         color: white;
     }
 
-    .shopping__counter-state-disabled {
+    .shopping__counter-state--disabled {
         display: none;
     }
 
@@ -1982,6 +1982,6 @@ footer {
 
     .shopping__icon-container:hover {
         background-color: black;
-        box-shadow: 0 0 2px 14px black;
+        box-shadow: 0 0 2px 4px black;
     }
 }

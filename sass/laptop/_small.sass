@@ -1,0 +1,254 @@
+@media (min-width: 1024px) and (orientation: landscape)
+    // NAVBAR
+    .navbar
+        height: 75px
+        flex-direction: row
+        background-color: red
+
+    .burger
+        &__icon-container
+            display: none
+    
+    // LOGO
+    .logo
+        position: static
+        flex-grow: 1
+        transform: translate(0, 0)
+    
+        &__span
+            color: white
+            letter-spacing: 1px
+        
+        &__logo-top
+            font-size: clamp(10px, 2.8vw, 30px)
+        
+        &__logo-bottom
+            font-size: clamp(5px, 1vw, 12px)
+            letter-spacing: 1px
+
+        &__fork-icon
+            font-size: clamp(10px, 1.65vw, 16px)
+            color: white
+    
+    // NAVIGATION
+    nav
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: 0 5vw
+
+    .navigation
+        &__list
+            display: flex
+            flex-direction: row
+            justify-content: center
+
+            &-item
+                margin: 0
+                display: block
+                padding: 0 1vw
+                text-align: center
+        
+        &__link
+            font-family: 'Rubik', sans-serif
+            font-weight: bold
+            font-size: clamp(12.2px, 1.2vw, 12.7px)
+            line-height: 50px
+            text-transform: uppercase
+            letter-spacing: 2px
+            text-shadow: 0 0 2px black
+            color: white
+            cursor: pointer
+        
+        &__calendar-icon
+            font-size: clamp(5px, 1.7vw, 20px)
+    
+    // HEADER
+    header
+        position: relative
+        background-image: url('../img/header4.jpg')
+        margin-top: 75px
+        height: calc(100vh - 75px)
+    
+    .header
+        &__panel
+            position: absolute
+            right: 8%
+            bottom: 50%
+            transform: translate(0, 40%)
+            width: 40%
+
+            &-button
+                width: auto
+                margin: 0 auto
+                font-size: clamp(20px, 3.5vw, 30px)
+                text-shadow: 1px 1px 2px black
+                box-shadow: 0 0 15px 15px white
+                letter-spacing: 2px
+                padding: 10px 50px
+                background-color: white
+                color: black
+            
+            &-text
+                font-size: clamp(20px, 2.7vw, 26px)
+    
+    // COURSES
+    .courses
+        width: 80%
+    
+    .course
+        flex-direction: row
+        height: auto
+        margin: 3vh 0
+        outline: 1px solid rgb(170, 170, 170)
+
+        &:nth-of-type(even) &__image-container
+            order: 1
+
+        &__image
+            &-container
+                width: 50%
+                height: auto
+                box-shadow: 0 0 0
+        
+        &__description
+            position: relative
+            width: 50%
+            box-shadow: 0 0 0
+
+        &__title
+            margin: 2vw auto 1vw auto
+            font-size: clamp(15px, 1.7vw, 19px)
+        
+        &__line
+            margin: 20px auto
+        
+        &__text
+            width: 80%
+            margin: 5% auto
+            font-size: clamp(14px, 1.3vw, 16px)
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 4 // number of lines to show
+            line-clamp: 4
+            -webkit-box-orient: vertical
+        
+        &__info
+            position: absolute
+            bottom: 7%
+            margin: 0
+
+            &-icon
+                font-size: clamp(19px, 1.7vw, 23px)
+        
+        &__city-and-price
+            font-size: clamp(9px, 1.2vw, 13px)
+            margin: 5px
+        
+        &__button
+            font-size: clamp(13px, 1.3vw, 15px)
+    
+    // ABOUT ME
+    .about-me
+        position: relative
+        overflow: hidden
+        width: 100%
+
+        &__my-name
+            font-size: clamp(20px, 3.5vw, 30px)
+            margin: 2.5vw
+
+        &__image-chudowicz
+            position: absolute
+            transform: rotate(-35deg)
+            width: 25%
+            right: -5%
+            bottom: -5%
+            z-index: -1
+
+        &__container
+            width: 80%
+        
+        &__text
+            font-size: clamp(14px, 5vw, 16px)
+
+        &__blog-button
+            margin: 12%
+            font-size: clamp(17px, 2.5vw, 23px)
+    
+    // RECIPES
+    .recipes
+        width: 90%
+        flex-direction: row
+        justify-content: center
+
+        &-from-me
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+
+            &__header-text
+                font-size: clamp(20px, 4vw, 23px)
+    
+    .recipe
+        width: 30%
+        justify-content: space-between
+        margin: 1.5%
+
+        &__image
+            height: 45%
+            padding: 1.3%
+        
+        &__description
+            width: 100%
+
+        &__title
+            width: 80%
+            font-size: clamp(14px, 2.5vw, 16px)
+            margin: 5% auto
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 1 // number of lines to show
+            line-clamp: 1
+            -webkit-box-orient: vertical
+
+        &__details
+            margin: 2.5% 5%
+
+            &-container
+                font-size: .8vw
+            
+            &-span
+                font-size: clamp(5px, 1vw, 12px)
+            
+            &-clock-icon
+                font-size: 1.5vw
+
+        &__text
+            font-size: clamp(13px, 1.5vw, 15px)
+            width: 80%
+            margin: 5% auto
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 2 // number of lines to show
+            line-clamp: 2 
+            -webkit-box-orient: vertical
+
+        &__load-more-button
+            font-size: clamp(12px, 1.8vw, 14px)
+            padding: 7px 20px
+            margin: 7% auto
+            letter-spacing: .5px
+        
+    // SHOPPING
+    .shopping
+        &__container
+            &-version--bigger-devices
+                top: 150px
+                right: 9%
+            
+            &--navbar-moving
+                top: 70px

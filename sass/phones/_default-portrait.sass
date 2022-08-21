@@ -1,0 +1,495 @@
+@import 'reset'
+    
+// NAVBAR
+.navbar
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 3
+    display: flex
+    flex-direction: row
+    height: 150px
+    width: 100%
+    background-color: #ff0000
+    box-shadow: 0 1px 5px black
+    user-select: none
+    transition: .3s ease 
+
+    &__state--active
+        height: 100vh
+        order: 10
+
+// BURGER ICON
+.burger
+    &__icon
+        &-container
+            position: absolute
+            top: 75px
+            left: 50%
+            transform: translate(-50%, 100%)
+            text-align: center
+            width: clamp(35px, 16vw, 50px)
+            height: clamp(35px, 16vw, 50px)
+            background-color: red
+            outline: 3.5px solid white
+            border-radius: 50%
+            box-shadow: 0 2px 10px 2px rgb(0, 0, 0)
+    
+        & // icon
+            font-size: clamp(17.5px, 8vw, 25px)
+            color: white
+            text-shadow: 0 0 3px black
+            transform: translate(0, 55%)
+
+            &-state--clicked
+                transform: rotate(90deg) translate(60%, 0)
+ 
+// LOGO
+.logo
+    position: absolute
+    top: 75px
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 300px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &__span
+        display: block
+        width: 100%
+        font-family: var(--kaushan)
+        font-weight: bold
+        color: white
+        text-align: center
+        letter-spacing: 2px
+        text-shadow: 1px 1px 5px black
+
+    &__logo-top
+        font-size: clamp(14px, 12vw, 35px)
+
+    &__logo-bottom
+        font-size: clamp(10px, 4.8vw, 16px)
+        transform: translate(0, -50%)
+
+    &__fork-icon
+        font-size: clamp(18px, 4vw, 20px)
+        color: white
+        padding: 2px
+        transform: rotate(35deg) translate(0, -3px)
+
+// NAVIGATION
+nav
+    display: none
+
+.navigation
+    &__state--active
+        display: block
+        width: 100%
+        margin-top: 170px
+        animation: show-navigation .3s .3s ease both
+    
+    &__list
+        list-style: none
+        width: 100%
+
+    &__list-item
+        margin: 30px
+    
+    &__link
+        display: block
+        width: 100%
+        font-size: clamp(16.5px, 2.5vw, 18px)
+        font-family: var(--roboto)
+        font-weight: bold
+        text-align: center
+        text-transform: uppercase
+        text-shadow: 1px 1px 2px black
+        color: white
+        letter-spacing: 2px
+    
+    &__calendar-icon
+        margin: 0 5px
+
+@keyframes show-navigation
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+// HEADER
+header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-image: url('../img/header-mobile.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    box-shadow: 0 2px 15px rgb(110, 110, 110)
+    width: 100%
+    margin-top: 150px
+    height: calc(100vh - 150px)
+    overflow: hidden
+
+.header__panel
+    & // panel
+        width: 85%
+        margin: 0 auto
+    
+    &-button
+        display: block
+        margin: 0 auto
+        background-color: white
+        color: black
+        text-shadow: 0 0 1px black
+        letter-spacing: 1px
+        box-shadow: 0 0 10px 15px white
+        font-size: clamp(15px, 9vw, 30px)
+        font-style: italic
+        font-family: var(--kaushan)
+        font-weight: bold
+        padding: 10px 20px
+        border: none
+        cursor: pointer
+
+    &-text
+        width: 70%
+        font-size: clamp(15px, 9vw, 25px)
+        text-shadow: 1px 1px 5px black
+        margin: 20px auto 0 auto
+        font-family: 'Rubik', sans-serif
+        font-style: italic
+        font-weight: 400
+        text-align: center
+        color: white
+
+// COURSES
+.courses
+    width: 85%
+    margin: 5vh auto
+
+.course
+    display: flex
+    flex-direction: column
+    width: 100%
+
+    &__image
+        &-container
+            width: 100%
+            height: auto
+            object-fit: cover
+            box-shadow: 0 0 4px gray
+
+        & // image
+            width: 100%
+            height: 100%
+        
+    &__description
+        width: 100%
+        box-shadow: 0 0 4px gray
+
+    &__title
+        display: block
+        width: 95%
+        margin: 30px auto 0 auto
+        font-size: clamp(15px, 6vw, 17px)
+        font-weight: bold
+        letter-spacing: 1px
+        font-family: var(--roboto)
+        text-transform: uppercase
+        text-align: center
+        color: var(--color-gray-text)
+
+    &__line
+        width: 50%
+        margin: 20px auto
+        border-top: clamp(4px, .5vw, 5px) dashed var(--color-claret)
+    
+    &__text
+        width: 90%
+        margin: 20px auto 0 auto
+        font-size: clamp(14px, 4vw, 15px)
+        letter-spacing: 1px
+        font-family: var(--roboto)
+        text-align: justify
+        color: var(--color-gray-text)
+
+    &__info
+        margin: 20px 0 30px 0
+        width: 100%
+        text-align: center
+
+        &-icon
+            font-size: clamp(17px, 6vw, 25px)
+            color: var(--color-claret)
+
+    &__city-and-price
+        display: block
+        margin: 10px
+        font-family: var(--roboto)
+        font-size: clamp(12px, 2vw, 14px)
+        text-transform: uppercase
+
+    &__button
+        font-size: clamp(14px, 5.5vw, 17px)
+        padding: 2px 20px
+        margin: 15px 0
+        font-family: var(--roboto)
+        text-transform: uppercase
+        background-color: var(--color-claret)
+        color: white
+        border: none
+        letter-spacing: 1px
+        text-shadow: 1px 1px 5px black
+        box-shadow: 0 0 5px 10px var(--color-claret)
+        cursor: pointer
+
+// ABOUT ME
+.about-me
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    width: 90%
+    margin: 0 auto
+
+    &__my-name
+        font-size: clamp(20px, 9vw, 25px)
+        font-weight: bold
+        font-family: var(--kaushan)
+        text-transform: uppercase
+        text-align: center
+        margin: 20px 0
+
+    &__image-chudowicz
+        width: 65%
+        height: auto
+
+    &__container
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+
+    &__text
+        font-size: clamp(14px, 5vw, 16px)
+        font-family: var(--rubik)
+        margin: 0 0 20px 0
+        text-align: justify
+    
+    &__blog-button
+        margin: 45px 0
+        padding: 5px 25px
+        background-color: black
+        color: white
+        letter-spacing: 1px
+        box-shadow: 0 0 5px 10px black
+        text-shadow: 0 0 2px white
+        font-size: clamp(16px, 6vw, 18px)
+        font-family: var(--roboto)
+        text-transform: uppercase
+        border: none
+        cursor: pointer
+
+// RECIPES
+.recipes
+    &-from-me
+        &__header-container
+            width: 100%
+            background-color: black
+            font-family: var(--rubik)
+            text-transform: uppercase
+            text-align: center
+            padding: 20px 0
+            color: white
+        
+        &__header-text
+            font-size: clamp(22px, 6vw, 25px)
+            width: 90%
+            margin: 0 auto
+
+    & // recipes
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        width: 85%
+        margin: 5vh auto
+
+.recipe
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+    margin: 5px auto
+    width: 100%
+    background-color: white
+    box-shadow: 0 0 3px gray
+
+    &__image
+        width: 100%
+        height: 55vw
+
+    &__title
+        display: block
+        width: 90%
+        font-size: clamp(15px, 6vw, 17px)
+        font-family: var(--rubik)
+        text-transform: uppercase
+        text-align: center
+        margin: 15px auto
+        color: var(--color-dark-gray)
+    
+    &__details
+        margin: 0 auto
+        width: 90%
+
+        &-container
+            display: flex
+            flex-wrap: nowrap
+            align-items: center
+            width: 100%
+            font-size: clamp(10px, 2vw, 12px)
+            font-family: var(--roboto)
+            color: var(--color-dark-gray)
+
+        &-span
+            font-size: clamp(11px, 3.3vw, 13px)
+        &-clock-icon
+            font-size: clamp(19px, 6vw, 26px)
+    
+    &__detail
+        flex-basis: 35%
+        text-align: center
+    
+    &__text
+        width: 90%
+        margin: 20px auto
+        font-family: var(--roboto)
+        font-size: clamp(13px, 4vw, 15px)
+        text-align: justify
+    
+    &__load-more-button
+        display: block
+        font-size: clamp(14px, 5vw, 16px)
+        font-family: var(--roboto)
+        font-weight: bold
+        text-transform: uppercase
+        background-color: white
+        border: 2px solid var(--color-dark-gray)
+        color: var(--color-dark-gray)
+        padding: 10px 30px
+        margin: 0 auto 20px auto
+        cursor: pointer
+
+// FOOTER
+footer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    height: 85px
+    font-family: var(--roboto)
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 1px
+    background-color: black
+    color: white
+
+// SHOPPING
+.shopping
+    &__container
+        position: fixed
+        bottom: 0
+        width: 100%
+        height: 70px
+        font-family: var(--roboto)
+        font-weight: bold
+        color: white
+        background-color: red
+        box-shadow: 0 0 3px .5px black
+        transition: .3s ease
+
+        &-orientation--portrait
+            display: block
+        
+        &-orientation--landscape
+            display: none
+        
+        &-state--disabled
+            bottom: -50vh
+
+        &-state--active
+            bottom: 0
+    
+    &__info-panel
+        position: absolute
+        top: -50%
+        left: 50%
+        transform: translate(-50%, 0)
+        width: 100%
+    
+    &__icon   
+        &-container
+            position: relative
+            margin: 0 auto
+            width: 50px
+            height: 50px
+            text-align: center
+            background-color: white
+            box-shadow: 0 0 3px 3px white
+            border-radius: 50%
+            cursor: pointer
+        
+        & // icon
+            color: black
+            font-size: 25px
+            line-height: 50px
+            transform: translate(-5%, 3%)
+    
+    &__counter
+        position: absolute
+        bottom: 0
+        right: 0
+        transform: translate(25%, 25%)
+        width: 20px
+        height: 20px
+        line-height: 20px
+        background-color: black
+        text-align: center
+        font-size: clamp(14px, 4vw, 16px)
+        color: white
+        border-radius: 50%
+    
+    &__click
+        &-here
+            position: absolute
+            top: 0
+            left: 0
+            transform: translate(-100%, 50%)
+            background-color: white
+            border-radius: 50%
+            box-shadow: 0 0 4px 2px white
+        &-icon
+            font-size: clamp(20px, 7vw, 30px)
+            color: black
+    
+    &__price
+        &-counter
+            margin-top: 10px
+            text-align: center
+            letter-spacing: 2px
+            font-size: clamp(14px, 5vw, 17px)
+
+        &-text
+            display: inline-block
+
+// KEEP MOVING ICON
+.keep-moving
+    &__container
+        display: none
+
+    
+
+    

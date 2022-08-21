@@ -94,11 +94,9 @@ window.addEventListener('scroll', () => {
     
     if (currentScrollPosition > prevScrollPosition && currentScrollPosition >= navbarPositionToHide) {
         navbar.style.transform = 'translate(0, -130%)';
-        // shoppingContainerBiggerDevices.style.transform = 'translate(0, -130%)';
         shoppingContainerBiggerDevices.classList.add('shopping__container--navbar-moving');
     } else {
         navbar.style.transform = 'translate(0, 0)';
-        // shoppingContainerBiggerDevices.style.transform = 'translate(0, 0)';
         shoppingContainerBiggerDevices.classList.remove('shopping__container--navbar-moving');
     }
     prevScrollPosition = currentScrollPosition;
@@ -181,6 +179,7 @@ let flag = false;
 const addClass = () => {
     navbar.classList.add('navbar__state--active');
         navigation.classList.add('navigation__state--active');
+        // navigation.classList.add('navigation__animation');
         burgerIcon.classList.add('burger__icon-state--clicked');
         document.body.style.overflowY = 'hidden';
 
@@ -190,6 +189,7 @@ const addClass = () => {
 const removeClass = () => {
     navbar.classList.remove('navbar__state--active');
         navigation.classList.remove('navigation__state--active');
+        // navigation.classList.remove('navigation__animation');
         burgerIcon.classList.remove('burger__icon-state--clicked');
         document.body.style.overflowY = 'auto';
 

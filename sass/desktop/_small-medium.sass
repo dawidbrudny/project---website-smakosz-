@@ -1,0 +1,200 @@
+@media (min-width: 1440px)
+
+    // NAVBAR
+    .navbar
+        transition: .2s linear
+    
+    // LOGO
+    .logo
+        flex-basis: 15%
+
+    // NAVIGATION
+    nav
+        width: 700px
+    
+    .navigation
+        &__link
+            transition: .2s linear
+
+            &:hover
+                text-shadow: 2px 2px 1px black
+                letter-spacing: 2.5px
+    
+    // HEADER
+    .header
+        &__panel
+            right: 5%
+
+            &-button
+                transform: translate(200%, 0)
+                transition: .2s ease
+
+                &:hover
+                    color: black
+                    text-shadow: 2px 2px 2px black
+                    letter-spacing: 2.5px
+
+                &-state
+                    &--active
+                        transform: translate(0, 0)
+                    
+                    &--enable-animation
+                        animation: header__button-shake 10s 3s cubic-bezier(.36,.07,.19,.97) infinite
+
+            &-text
+                animation: header__text-animation .3s .7s linear both
+
+    @keyframes header__button-shake
+        1%, 9% 
+            transform: translate3d(-1px, 0, 0)
+        2%, 8%
+            transform: translate3d(2px, 0, 0)
+        3%, 5%, 7%
+            transform: translate3d(-4px, 0, 0)
+        4%, 6% 
+            transform: translate3d(4px, 0, 0)
+    
+    @keyframes header__button-move
+        0%
+            transform: translate(200%, 0)
+        100%
+            transform: translate(0, 0)
+    
+    @keyframes header__text-animation
+        0%
+            opacity: 0
+        100%
+            opacity: 1
+
+    // COURSES
+    .courses
+        width: 70%
+    
+    .course
+        &:nth-of-type(even)
+            transform: translate(100%, 0)
+        
+        &:hover
+            background-color: rgb(230, 230, 230)
+        
+        &__animation-on-scroll
+            transform: translate(0, 0)
+
+            &:nth-of-type(even)
+                transform: translate(0, 0)
+        
+        &__image
+            &-container
+                overflow: hidden
+
+            & // image
+                transition: .2s linear
+        
+        &__text
+            width: 70%
+
+        &__info
+            bottom: 7%
+
+        &__button
+            transition: .2s linear
+
+            &:hover
+                background-color: black
+                box-shadow: 0 0 4px 9px black
+                text-shadow: .5px .5px .5px white
+                letter-spacing: 1.7px
+                padding: 2px 25px
+        
+    // ABOUT ME
+    .about-me
+        overflow: hidden
+
+        &__container
+            width: 85%
+        
+        &__image-chudowicz
+            width: 22%
+            right: -20%
+            bottom: -40%
+            transition: .4s ease
+        
+        &__text
+            width: 40%
+        
+        &__blog-button
+            margin: 7% 10%
+            transition: .2s linear
+
+            &:hover
+                background-color: var(--color-claret)
+                box-shadow: 0 0 4px 8px var(--color-claret)
+                text-shadow: 1px 1px 1px white
+                letter-spacing: 1.7px
+                padding: 5px 35px
+                
+    // RECIPES
+    .recipes
+        width: 70%
+    
+    .recipe
+        transition: transform .5s ease, background-color .2s linear
+        overflow: hidden
+        transform: scale(0)
+    
+        &:hover
+            background-color: rgb(230, 230, 230)
+            transform: scale(102%)
+        
+        &__animation-on-scroll
+            transform: scale(100%)
+        
+        &__image
+            transition: .2s linear
+        
+        &__load-more-button
+            transition: .2s linear
+
+            &:hover
+                background-color: var(--color-dark-gray)
+                color: white
+                letter-spacing: 1.3px
+                padding: 7px 22px
+    
+    // KEEP MOVING
+    .keep-moving
+        &__container
+            display: block
+            position: fixed
+            bottom: 5%
+            left: 50%
+            transform: translate(-50%, 0)
+            width: 50px
+            height: 50px
+            text-align: center
+            background-color: black
+            border-radius: 50%
+            transition: .3s linear
+
+            &-state
+                &--disabled
+                    transform: scale(0)
+
+                &--active
+                    transform: scale(100%)
+        
+        &__icon
+            line-height: 50px
+            color: white
+            font-size: 25px
+    
+    // SHOPPING
+    .shopping
+        &__icon
+            &-container
+                transition: .3s ease
+
+                &:hover
+                    background-color: black
+                    box-shadow: 0 0 2px 4px black
+            

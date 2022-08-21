@@ -1,0 +1,295 @@
+
+// --- SMALL/MEDIUM MOBILE VERSION ---
+    
+@media (max-device-height: 425px) and (orientation: landscape) 
+    // NAVIGATION
+    .navbar
+        height: 90px
+
+        &__state--active
+            height: 100vh
+        
+    .navigation
+        &__state--active
+            margin-top: 90px
+    
+    // BURGER
+    .burger
+        &__icon-container
+            top: 45px
+            left: 88%
+            transform: translate(0, -50%)
+            width: clamp(40px, 7vw, 45px)
+            height: clamp(40px, 7vw, 45px)
+            box-shadow: 0 0 15px 2px white
+            margin: 0 auto
+        
+        &__icon
+            font-size: clamp(20px, 3.5vw, 22.5px)
+            text-shadow: 0 0 2px white
+
+            &-state--clicked
+                transform: rotate(90deg) translate(60%, 4%)
+        
+    // LOGO
+    .logo
+        top: 45px
+        left: 5%
+        transform: translate(0, -50%)
+
+        &__span
+            margin: 0 0
+            
+        &__logo-top
+            font-size: clamp(30px, 5.5vw, 30px)
+
+        &__logo-bottom
+            font-size: clamp(10px, 2vw, 12px)
+            
+        &__fork-icon
+            font-size: clamp(14px, 2.4vw, 17px)
+    
+    // HEADER
+    header
+        background-image: url('../img/header-mobile-landscape.jpg')
+        margin-top: 90px
+        height: calc(100vh - 90px)
+
+    .header
+        &__panel
+            flex-direction: row
+            flex-wrap: wrap
+            width: 60%
+            margin-top: 5%
+        
+            &-button
+                font-size: clamp(25px, 3.5vw, 35px)
+                padding: 0 20px
+            
+            &-text
+                font-size: clamp(21px, 2vw, 25px)
+                width: 70%
+    
+    // COURSES
+    .courses
+        width: 95%
+    
+    .course
+        flex-direction: row
+        height: auto
+        margin: 3vh 0
+        outline: 1px solid rgb(170, 170, 170)
+
+        &__image
+            &-container
+                width: 50%
+                height: auto
+                box-shadow: 0 0 0
+            
+        &:nth-of-type(even) &__image-container
+            order: 1
+    
+        &__description
+            position: relative
+            width: 50%
+            box-shadow: 0 0 0
+        
+        &__title
+            margin: 20px auto 0 auto
+            font-size: clamp(15px, 4vw, 17px)
+        
+        &__line
+            margin: 1.5vw auto
+            border-top-width: clamp(3.5px, .5vw, 5px)
+        
+        &__text
+            width: 80%
+            margin: 2% auto
+            font-size: clamp(13px, 2.3vw, 15px)
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 2 // number of lines to show
+            line-clamp: 2
+            -webkit-box-orient: vertical
+
+        &__info
+            position: absolute
+            bottom: 3%
+            margin: 0
+
+            &-icon
+                font-size: clamp(19px, 2.5vw, 21px)
+        
+        &__city-and-price
+            font-size: clamp(10px, 2vw, 12px)
+            margin: 5px
+        
+        &__button
+            font-size: clamp(12px, 3vw, 14px)
+            padding: 0 10px
+    
+    // // ABOUT ME
+    .about-me
+        position: relative
+    
+        &__image-chudowicz
+            position: absolute
+            bottom: -5%
+            right: -10%
+            width: clamp(200px, 35%, 240px)
+            transform: rotate(-35deg)
+            z-index: -1
+
+        &__blog-button
+            margin: 15% 0 15% 0
+    
+    // RECIPES
+    .recipes
+        width: 95%
+        flex-direction: row
+        justify-content: center
+    
+    .recipe
+        flex-wrap: nowrap
+        margin: 1.5%
+        height: 32vw
+
+        &__image
+            padding: 2.5%
+            width: 50%
+            height: 100%
+        
+        &:nth-of-type(even) &__image
+            order: 1
+        
+        &__description
+            position: relative
+            width: 50%
+        
+        &__title
+            font-size: clamp(12px, 2.7vw, 17px)
+            margin: 5% auto
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 1 // number of lines to show
+            line-clamp: 1 
+            -webkit-box-orient: vertical
+            
+        &__details
+            width: 80%
+            margin: 5% auto 0 auto
+
+            &-container
+                font-size: 1.3vw
+            
+            &-span
+                font-size: clamp(11px, 1.8vw, 12px)
+            
+            &-clock-icon
+                font-size: 1.5vw
+        
+        &__text
+            width: 80%
+            font-size: clamp(12px, 2.3vw, 16px)
+            margin: 5% auto
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 2 // number of lines to show
+            line-clamp: 2 
+            -webkit-box-orient: vertical
+        
+        &__load-more-button
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translate(-50%, 0)
+            font-size: clamp(12px, 2.5vw, 14px)
+            letter-spacing: .5px
+    
+    // // SHOPPING
+    .shopping
+
+        &__container
+            &-orientation
+                &--portrait
+                    display: none
+
+                &--landscape
+                    display: block
+                    position: absolute
+                    top: 45px
+                    right: 15%
+                    width: auto
+                    height: 45px
+                    background-color: transparent
+                    box-shadow: 0 0
+                    transform: translate(0, -50%)
+                
+        &__info
+            &-panel
+                position: static
+                transform: translate(0, 0)
+        
+        &__icon
+            &-container
+                width: 45px
+                height: 45px
+                outline: 3.5px solid white
+                box-shadow: 0 0 15px 2px white
+                background-color: transparent
+            
+            & // icon
+                line-height: 45px
+                font-size: 22.5px
+                transform: translate(-5%, 5%)
+                color: white
+        
+        &__counter
+            &-state
+                &--disabled
+                    display: none
+                
+                &--active
+                    display: block
+        
+        &__click-here
+                display: none
+        
+        &__price
+            &-counter
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translate(-50%, -50%)
+                margin-top: 0
+                background-color: black
+                padding: 0 5px
+                font-size: clamp(13px, 4vw, 14px)
+                
+                &-state
+                    &--disabled
+                        display: none
+                
+                    &--active
+                        display: block
+
+// --- LARGE MOBILE VERSION
+@media (max-device-height: 425px) and (min-width: 800px) and (orientation: landscape)
+    // COURSES
+    .course
+        &__text
+            width: 80%
+            margin: 2% auto
+            font-size: clamp(13px, 2.3vw, 15px)
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 4 // number of lines to show 
+            line-clamp: 4
+            -webkit-box-orient: vertical
+        
+        &__button
+            padding: 0 15px
