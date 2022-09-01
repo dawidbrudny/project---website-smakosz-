@@ -92,9 +92,24 @@
 
             & // image
                 transition: .2s linear
+
+        &__title
+            &--state
+                &-disabled
+                    color: $color-gray-text
+
+                &-active
+                    color: black 
         
         &__text
             width: 70%
+
+            &--state
+                &-disabled
+                    color: $color-gray-text
+                
+                &-active
+                    color: black
 
         &__info
             bottom: 7%

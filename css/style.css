@@ -1323,7 +1323,7 @@ footer {
     right: 9%;
   }
   .shopping__container--navbar-moving {
-    top: 70px;
+    top: 75px;
   }
 }
 @media (min-width: 1280px) {
@@ -1478,8 +1478,20 @@ footer {
   .course__image {
     transition: 0.2s linear;
   }
+  .course__title--state-disabled {
+    color: #757575;
+  }
+  .course__title--state-active {
+    color: black;
+  }
   .course__text {
     width: 70%;
+  }
+  .course__text--state-disabled {
+    color: #757575;
+  }
+  .course__text--state-active {
+    color: black;
   }
   .course__info {
     bottom: 7%;

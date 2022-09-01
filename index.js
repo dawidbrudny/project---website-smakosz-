@@ -219,8 +219,12 @@ courses.forEach((course, id) => course.addEventListener('mousemove', () => {
     if (window.innerWidth >= 1440) {
 
         coursesImage[id].style.transform = 'scale(105%)';
-        coursesTitle[id].style.color = 'black';
-        coursesText[id].style.color = 'black';
+
+        coursesTitle[id].classList.remove('course__title--state-disabled');
+        coursesText[id].classList.remove('course__text--state-disabled');
+
+        coursesTitle[id].classList.add('course__title--state-active');
+        coursesText[id].classList.add('course__text--state-active');
     }
 }))
 
@@ -228,8 +232,12 @@ courses.forEach((course, id) => course.addEventListener('mouseout', () => {
     if (window.innerWidth >= 1440) {
 
         coursesImage[id].style.transform = 'scale(100%)';
-        coursesTitle[id].style.color = 'var(--color-gray-text)';
-        coursesText[id].style.color = 'var(--color-gray-text)';
+
+        coursesTitle[id].classList.remove('course__title--state-active');
+        coursesText[id].classList.remove('course__text--state-active');
+
+        coursesTitle[id].classList.add('course__title--state-disabled');
+        coursesText[id].classList.add('course__text--state-disabled');
     }
 }))
 
