@@ -16,15 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --color-claret: #b60000;
-  --color-gray-text: #757575;
-  --color-dark-gray: #3a3a3a;
-  --roboto: "Roboto Condensed", sans-serif;
-  --rubik: "Rubik", sans-serif;
-  --kaushan: "Kaushan Script", cursive;
-}
-
 .wrapper {
   overflow-x: hidden;
 }
@@ -87,7 +78,7 @@ html {
 .logo__span {
   display: block;
   width: 100%;
-  font-family: var(--kaushan);
+  font-family: "Kaushan Script", cursive;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -130,7 +121,7 @@ nav {
   display: block;
   width: 100%;
   font-size: clamp(16.5px, 2.5vw, 18px);
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -187,7 +178,7 @@ header {
   box-shadow: 0 0 10px 15px white;
   font-size: clamp(15px, 9vw, 30px);
   font-style: italic;
-  font-family: var(--kaushan);
+  font-family: "Kaushan Script", cursive;
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -237,24 +228,24 @@ header {
   font-size: clamp(15px, 6vw, 17px);
   font-weight: bold;
   letter-spacing: 1px;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-gray-text);
+  color: #757575;
 }
 .course__line {
   width: 50%;
   margin: 20px auto;
-  border-top: clamp(4px, 0.5vw, 5px) dashed var(--color-claret);
+  border-top: clamp(4px, 0.5vw, 5px) dashed #b60000;
 }
 .course__text {
-  width: 90%;
-  margin: 20px auto 0 auto;
+  width: 80%;
+  margin: 30px auto 0 auto;
   font-size: clamp(14px, 4vw, 15px);
   letter-spacing: 1px;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   text-align: justify;
-  color: var(--color-gray-text);
+  color: #757575;
 }
 .course__info {
   margin: 20px 0 30px 0;
@@ -263,12 +254,12 @@ header {
 }
 .course__info-icon {
   font-size: clamp(17px, 6vw, 25px);
-  color: var(--color-claret);
+  color: #b60000;
 }
 .course__city-and-price {
   display: block;
   margin: 10px;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(12px, 2vw, 14px);
   text-transform: uppercase;
 }
@@ -276,14 +267,14 @@ header {
   font-size: clamp(14px, 5.5vw, 17px);
   padding: 2px 20px;
   margin: 15px 0;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
-  background-color: var(--color-claret);
+  background-color: #b60000;
   color: white;
   border: none;
   letter-spacing: 1px;
   text-shadow: 1px 1px 5px black;
-  box-shadow: 0 0 5px 10px var(--color-claret);
+  box-shadow: 0 0 5px 10px #b60000;
   cursor: pointer;
 }
 
@@ -298,7 +289,7 @@ header {
 .about-me__my-name {
   font-size: clamp(20px, 9vw, 25px);
   font-weight: bold;
-  font-family: var(--kaushan);
+  font-family: "Kaushan Script", cursive;
   text-transform: uppercase;
   text-align: center;
   margin: 20px 0;
@@ -315,7 +306,7 @@ header {
 }
 .about-me__text {
   font-size: clamp(14px, 5vw, 16px);
-  font-family: var(--rubik);
+  font-family: "Rubik", sans-serif;
   margin: 0 0 20px 0;
   text-align: justify;
 }
@@ -328,7 +319,7 @@ header {
   box-shadow: 0 0 5px 10px black;
   text-shadow: 0 0 2px white;
   font-size: clamp(16px, 6vw, 18px);
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -337,7 +328,7 @@ header {
 .recipes-from-me__header-container {
   width: 100%;
   background-color: black;
-  font-family: var(--rubik);
+  font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   text-align: center;
   padding: 20px 0;
@@ -373,13 +364,13 @@ header {
 }
 .recipe__title {
   display: block;
-  width: 90%;
+  width: 80%;
   font-size: clamp(15px, 6vw, 17px);
-  font-family: var(--rubik);
+  font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin: 15px auto;
-  color: var(--color-dark-gray);
+  margin: 30px auto 20px auto;
+  color: #3a3a3a;
 }
 .recipe__details {
   margin: 0 auto;
@@ -391,8 +382,8 @@ header {
   align-items: center;
   width: 100%;
   font-size: clamp(10px, 2vw, 12px);
-  font-family: var(--roboto);
-  color: var(--color-dark-gray);
+  font-family: "Roboto Condensed", sans-serif;
+  color: #3a3a3a;
 }
 .recipe__details-span {
   font-size: clamp(11px, 3.3vw, 13px);
@@ -405,21 +396,21 @@ header {
   text-align: center;
 }
 .recipe__text {
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(13px, 4vw, 15px);
   text-align: justify;
 }
 .recipe__load-more-button {
   display: block;
   font-size: clamp(14px, 5vw, 16px);
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   background-color: white;
-  border: 2px solid var(--color-dark-gray);
-  color: var(--color-dark-gray);
+  border: 2px solid #3a3a3a;
+  color: #3a3a3a;
   padding: 10px 30px;
   margin: 0 auto 20px auto;
   cursor: pointer;
@@ -431,7 +422,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 85px;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -445,7 +436,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 70px;
-  font-family: var(--roboto);
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   color: white;
   background-color: red;
@@ -541,7 +532,7 @@ footer {
     top: 70px;
   }
   .shopping__icon-container {
-    background-color: var(--color-claret);
+    background-color: #b60000;
     box-shadow: 0 0 1px 4px white;
   }
   .shopping__icon {
@@ -1523,8 +1514,8 @@ footer {
     transition: 0.2s linear;
   }
   .about-me__blog-button:hover {
-    background-color: var(--color-claret);
-    box-shadow: 0 0 4px 8px var(--color-claret);
+    background-color: #b60000;
+    box-shadow: 0 0 4px 8px #b60000;
     text-shadow: 1px 1px 1px white;
     letter-spacing: 1.7px;
     padding: 5px 35px;
@@ -1551,7 +1542,7 @@ footer {
     transition: 0.2s linear;
   }
   .recipe__load-more-button:hover {
-    background-color: var(--color-dark-gray);
+    background-color: #3a3a3a;
     color: white;
     letter-spacing: 1.3px;
     padding: 7px 22px;
@@ -1585,6 +1576,6 @@ footer {
   }
   .shopping__icon-container:hover {
     background-color: black;
-    box-shadow: 0 0 2px 4px black;
+    box-shadow: 0 0 1px 4px #b60000;
   }
 }/*# sourceMappingURL=style.css.map */
