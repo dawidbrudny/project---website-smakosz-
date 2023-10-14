@@ -1,7 +1,7 @@
 # Landing Page "Smakosz" (Polish version)
 ![CSS version](https://img.shields.io/badge/CSS-3-green) ![Sass badge](https://img.shields.io/badge/Preprocessor-SASS-brown)
 ![Flexbox badge](https://img.shields.io/badge/Flex-box-white) ![JS badge](https://img.shields.io/badge/JavaScript-ES6-gold)
-> A simple landing page built with HTML, CSS and JavaScript. This website project was made to consolidate my knowledge and skills after I finished a advanced web developer course about CSS. It's my first time when I built responsive website. I made use of **Flexbox, Media queries and Preprocessor Sass.**
+> A simple landing page built with HTML, CSS and JavaScript. This website project was made to consolidate my knowledge and skills after I finished an web developer course about CSS (link to the course [_here_](https://www.udemy.com/course/front-end-zaawansowany/)). It's my first time when I built responsive website. I made use of **Flexbox, Media queries and Preprocessor Sass.**
 
 > **Link to the website [_here_](https://dawidbrudny.github.io/project---website-smakosz-/)** (hosted on github pages).
 
