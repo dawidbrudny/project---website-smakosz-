@@ -28,7 +28,7 @@ Over time, I learned the programming language JavaScript and programmed some of 
 
 
 ## Screenshots
-![Example screenshot](./img/header4.jpg)
+![Example screenshot](./img/website-smakosz-1.png)
 
 ## Project Status
 Project is: _complete_ / _in the meantime I will work on it_.
